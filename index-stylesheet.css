@@ -1,3 +1,72 @@
 @charset "UTF-8";
 /* CSS Document */
 
+*{ 
+margin: 0; 
+padding: 0; 
+}
+
+/*navbar------------------------*/ 
+.desktop-navbar{
+	display: flex;
+}
+.desktop-navbar-logo{ 
+margin: 10px 0 0 20px;}
+.navbar { 
+	margin: 0 0 0 20px; 
+	width: 800px; 
+	padding-top: 10px;	
+}
+
+.navbar li{ 
+display: inline-block; 
+margin: 0 20px;
+
+position: relative;
+
+}
+
+.navbar a{ 
+text-decoration: none; 
+font-family:"Roboto", sans-serif; 
+color: white; 
+}
+
+.navbar a::before{ 
+	content: '';
+  display: block;
+  height: 5px;
+  background-color:rgba(253,106,89,1.00);
+	width: 0%;
+	position: absolute; 
+	top: 0; 
+}
+
+.navbar a:hover{ 
+color:rgba(253,106,89,1.00); 
+}
+
+.navbar a:hover::before{ 
+	width: 100%;
+	transition: all ease-in-out 250ms; 
+}
+
+/* hero-section-------------------*/ 
+.hero-section svg{ 
+position: absolute; 
+z-index: 2; 
+right: 0; 
+top: 0; 
+}
+
+.hero-section-text{ 
+	width: 100%; 
+	height: 768px;
+	background-color: black; 
+	position: absolute;
+	top: 0; 
+	z-index: -1;
+	
+
+}
+
