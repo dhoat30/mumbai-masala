@@ -112,15 +112,31 @@ left: 60px;
 	
 }
 
-.hero-section h2{ 
+.hero-section-text h2{ 
 	color: rgba(191,191,191,1.00); 
 	font-weight: 900; 
 	font-size: 60pt; 
 	margin: 10px 0 -10px 0; 
 }
 
-.hero-section a:nth-child(1){ 
+.hero-buttons{ 
+	display: flex; 
+	justify-content: center;
+	
+}
+.hero-buttons a{
 	background-color: rgba(253,106,89,1.00); 
+	padding: 10px 0; 
+	width: 200px;
+	display:block; 
+	text-align: center; 
+	margin: 30px 10px;
+	border-radius: 20px; 
+	color: white; 
+	text-decoration: none; 
+}
+.hero-buttons a:nth-child(2){ 
+	background-color:rgba(254,192,0,1.00); 
 	
 }
 
