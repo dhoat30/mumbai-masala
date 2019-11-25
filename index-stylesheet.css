@@ -15,12 +15,13 @@ margin: 10px 0 0 20px;}
 .navbar { 
 	margin: 0 0 0 20px; 
 	width: 800px; 
-	padding-top: 10px;	
+	padding-top: 0;	
 }
 
 .navbar li{ 
 display: inline-block; 
 margin: 0 20px;
+padding-top: 30px; 
 
 position: relative;
 
@@ -39,7 +40,7 @@ color: white;
   background-color:rgba(253,106,89,1.00);
 	width: 0%;
 	position: absolute; 
-	top: 0; 
+	top: 10px; 
 }
 
 .navbar a:hover{ 
