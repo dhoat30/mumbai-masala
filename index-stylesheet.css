@@ -15,10 +15,10 @@ h2{
 h6{ 
 	font-family: "Roboto Regular", sans-serif;
 	font-style: italic; 
-	font-size: 20pt; 
+	font-size: 30pt; 
 	font-weight: 100; 
 	color: white; 
-	text-align: center; 
+	text-align: left; 
 }
 
 h1{ 
@@ -75,12 +75,22 @@ color:rgba(253,106,89,1.00);
 }
 
 /* hero-section-------------------*/ 
-.hero-section svg{ 
+.hero-section-svg{ 
 position: absolute; 
 z-index: 2; 
-right: 0; 
+right: 0;
 top: 0; 
 }
+.hero-section-svg img { 
+position: absolute; 
+left: 60px;
+	top: 50%; 
+	margin-top: -125px; 
+	border: 5px dashed red; 
+	border-radius: 50%;
+	padding: 10px; 
+}
+
 
 .hero-section{ 
 	width: 100%; 
@@ -94,21 +104,24 @@ top: 0;
 .hero-section-bowl{ 
 }
 .hero-section-text-area{ 
-	margin: 0 0 0 20px; 
+	margin: 0 0 0 40px; 
 	display: flex; 
 	align-items: center; 
-	width: 100%; 
+	width: 60%; 
 	height: 100%; 
+	
 }
 
 .hero-section h2{ 
 	color: rgba(191,191,191,1.00); 
 	font-weight: 900; 
-	text-align: center; 
+	font-size: 60pt; 
+	margin: 10px 0 -10px 0; 
 }
 
-.hero-section h1{
-	text-align: center; 
+.hero-section a:nth-child(1){ 
+	background-color: rgba(253,106,89,1.00); 
+	
 }
 
 
