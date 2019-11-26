@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83" height="83" viewBox="0 0 83 83">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="83" height="83" transform="translate(191 866)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-191 -866)" clip-path="url(#clip-path)">
+    <g id="logistics-delivery-truck-in-movement" transform="translate(177.217 847.771)">
+      <g id="Group_1" data-name="Group 1" transform="translate(27.191 22.575)">
+        <g id="Group_17" data-name="Group 17">
+          <g id="glass-and-bottle-of-wine">
+            <path id="Path_3" data-name="Path 3" d="M28.8,32.557a15.018,15.018,0,0,0-1.916-7.442l-.3-.523H7.883l-.292.523a15.042,15.042,0,0,0-1.916,7.442c0,6.785,4.318,12.407,9.921,13.337V61.739c-3.232.131-5.64.622-5.64,1.2,0,.691,3.282,1.244,7.333,1.244s7.342-.554,7.342-1.244c0-.582-2.408-1.073-5.64-1.2V45.882C24.537,44.892,28.8,39.292,28.8,32.557ZM17.232,43.962c-5.233,0-9.495-5.115-9.495-11.411a13.065,13.065,0,0,1,1.369-5.9H25.361a13.117,13.117,0,0,1,1.372,5.9C26.736,38.851,22.468,43.962,17.232,43.962ZM48.591,7.13H40.369V0h8.222Zm0,8.835V9.324H40.369v6.645a10,10,0,0,0-5.9,9.118v39.47H54.487V25.087A9.992,9.992,0,0,0,48.591,15.966ZM52.72,54.493h-16.3V34.931h16.3ZM25.871,32.772s-.432,10.344-8.5,10.344S8.216,32.772,8.216,32.772Z" transform="translate(-5.674)" fill="#fd6a59"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
