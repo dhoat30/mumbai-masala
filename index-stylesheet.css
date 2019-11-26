@@ -30,7 +30,6 @@ h1{
 /*navbar------------------------*/ 
 .desktop-navbar{
 	display: flex;
-	position: fixed; 
 }
 .desktop-navbar-logo{ 
 margin: 10px 0 0 20px;}
@@ -120,24 +119,30 @@ left: 60px;
 }
 
 .hero-buttons{ 
+	margin-top: 20px;
 	display: flex; 
-	justify-content: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: flex-start;
 	
 }
 .hero-buttons a{
 	background-color: rgba(253,106,89,1.00); 
-	padding: 10px 0; 
+	font-family: 'Roboto Regular', sans-serif; 
+	font-weight: 900; 
+	padding: 15px 0; 
 	width: 200px;
 	display:block; 
 	text-align: center; 
-	margin: 30px 10px;
+	margin:5px 10px;
 	border-radius: 20px; 
 	color: white; 
 	text-decoration: none; 
+	position: relative; 
+	z-index: 4; 
 }
 .hero-buttons a:nth-child(2){ 
 	background-color:rgba(254,192,0,1.00); 
-	
 }
 
 
