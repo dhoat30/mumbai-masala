@@ -9,7 +9,14 @@ padding: 0;
 
 h2{ 
 	font-family: "Roboto Black", sans-serif; 
-	font-size: 60pt;  
+	font-size: 60pt; 
+	
+}
+
+h4 { 
+	font-family: 'Roboto', 'sans-serif'sans-serif; 
+
+	
 }
 
 h6{ 
@@ -25,11 +32,15 @@ h1{
 	font-family: "Roboto Mono", sans-serif; 
 	color:rgba(254,192,0,1.00); 
 }
+p{ 
 
+}
 
 /*navbar------------------------*/ 
 .desktop-navbar{
 	display: flex;
+	z-index: 2;
+	position: relative;
 }
 .desktop-navbar-logo{ 
 margin: 10px 0 0 20px;}
@@ -97,7 +108,7 @@ left: 60px;
 	background-color: black; 
 	position: absolute;
 	top: 0; 
-	z-index: -1;
+	z-index: 1;
 }
 
 .hero-section-bowl{ 
@@ -124,6 +135,7 @@ left: 60px;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	z-index: 10; 
 	
 }
 .hero-buttons a{
@@ -145,7 +157,11 @@ left: 60px;
 	background-color:rgba(254,192,0,1.00); 
 }
 
-
+/*-------USP-------------------------------*/ 
+#usp{
+	margin-top: 1000px; 
+	
+}
 
 
 
