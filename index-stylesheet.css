@@ -10,14 +10,19 @@ padding: 0;
 h2{ 
 	font-family: "Roboto Black", sans-serif; 
 	font-size: 60pt; 
-	
+	letter-spacing: 1px; 
+}
+h3{ 
+	font-family: 'Roboto Light', sans-serif; 
+	font-size: 50pt; 
+	font-weight: 100; 
+
 }
 
 h4 { 
 	font-family: 'Roboto Black', sans-serif; 
 	letter-spacing: 1px; 
 	font-weight: 900;
-	
 }
 
 h6{ 
@@ -110,7 +115,8 @@ left: 60px;
 .hero-section{ 
 	width: 100%; 
 	height: 767px;
-	background-color: black; 
+background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	position: absolute;
 	top: 0; 
 	z-index: 1;
@@ -186,6 +192,98 @@ left: 60px;
 	display: block; 
 	margin: 0 auto; 
 }
+
+/*-Specials------------------------------*/ 
+#specials{ 
+background-color: black; 
+background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	position: relative; 
+z-index: -2; 
+	 
+}
+
+.background-decoration{ 
+	transform: rotate(90.3deg);
+	position: absolute; 
+	top: -175px; 
+	left: -503px; 
+	z-index: -1; 
+	
+}
+.background-decoration2{ 
+	transform: rotate(90.3deg);
+	position: absolute; 
+	top: -175px; 
+	left: 152px; 
+	z-index: -1; 
+	
+}
+
+.special-grid{ 
+	margin: 0 auto; 
+	width: 650px; 
+	position: relative;
+	display: grid; 
+	grid-template-columns: 300px 300px; 
+	grid-gap: 50px; 
+	grid-template-rows: 400px 400px; 
+	justify-content: center; 
+	padding: 100px 0; 
+}
+.special-grid h2{ 
+	position: absolute; 
+	background-color: rgba(253,106,89,1.00); 
+	color: white; 
+	padding: 20px; 
+	top: 50%; 
+	left: 50%; 
+	margin-left: -190px; 
+	margin-top: -60px; 
+	z-index: 2; 
+	
+
+}
+
+
+.special-box{ 
+	background-color: rgba(255,229,144,1.00); 
+	position: relative; 
+}
+
+.special-box h3{ 
+	text-align: center; 
+	margin: 50px 0 20px 0; 
+}
+.flex-svg{ 
+	display: grid; 
+	grid-template-columns: repeat( auto-fit, minmax(60px, 60px) );
+	justify-content: center; 
+	grid-column-gap: 10px; 
+	padding: 0 0 10px 0; 
+}
+
+.special-box p{
+	position: absolute; 
+	top: 110px; 
+	left: 100px; 
+
+}
+.special-box h4{ 
+	text-align: left; 
+	margin: 0 0 0 20px; 
+	font-size: 17pt; 
+}
+
+.special-box ul li{ 
+	margin: 5px 0 0 35px; 
+	font-family: "Roboto Regular", sans-serif;
+	letter-spacing: 1px; 
+	line-height: 20px; 
+}
+
+
+
 
 
 
