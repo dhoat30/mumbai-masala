@@ -282,7 +282,52 @@ z-index: -2;
 	line-height: 20px; 
 }
 
+/* family combo------------*/ 
+.family-combo { 
+	background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	padding: 100px 0; 
+}
+.family-combo-img{
+	position: relative; 
+}
+.family-combo-img img { 
+	position: absolute; 
+	top: -55px; 
+	left: 40px; 
+	object-fit:cover;    
+	object-position: left; 
+}
 
+.family-combo-grid{ 
+	padding: 40px 0; 
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr; 
+	background-color: rgba(255,229,144,1.00); 
+} 
+
+
+
+.family-combo-text{ 
+	grid-column: 3/4; 
+}
+.family-combo-text  h3{ 
+	text-align: left; 
+	margin: 0 0 20px 0; 
+}
+
+.family-combo-text h4{ 
+	text-align: left; 
+	
+	font-size: 17pt; 
+}
+
+.family-combo-text ul li{ 
+	margin: 5px 0 0 35px; 
+	font-family: "Roboto Regular", sans-serif;
+	letter-spacing: 1px; 
+	line-height: 20px; 
+}
 
 
 
