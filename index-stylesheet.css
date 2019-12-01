@@ -284,46 +284,53 @@ z-index: -2;
 
 /* family combo------------*/ 
 .family-combo { 
+	padding: 100px 0; 
 	background: rgb(46,46,61);
 background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
-	padding: 100px 0; 
-}
-.family-combo-img{
-	position: relative; 
-}
-.family-combo-img img { 
-	position: absolute; 
-	top: -55px; 
-	left: 40px; 
-	object-fit:cover;    
-	object-position: left; 
 }
 
 .family-combo-grid{ 
-	padding: 40px 0; 
 	display: grid; 
-	grid-template-columns: 1fr 1fr 1fr; 
-	background-color: rgba(255,229,144,1.00); 
-} 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(16,30px); 
+		
 
-
-
-.family-combo-text{ 
-	grid-column: 3/4; 
 }
+.family-background{
+	background-color: rgba(255,229,144,1.00); 
+	grid-column: 1 / 41; 
+	grid-row: 2 / 16; 
+	
+
+}
+.family-combo-text{ 
+	grid-column: 25 / 41; 
+	grid-row: 2 / 16; 
+	z-index: 2; 	
+}
+
+.family-combo-img{ 
+	grid-column: 2 / 24;
+	grid-row: 1 / 17; 
+	z-index: 1; 
+}
+.family-combo-img img{ 
+	object-fit: cover; 
+}
+
 .family-combo-text  h3{ 
 	text-align: left; 
-	margin: 0 0 20px 0; 
+	margin-top: 30px; 
 }
 
 .family-combo-text h4{ 
 	text-align: left; 
-	
 	font-size: 17pt; 
+	letter-spacing: 1px; 
 }
 
 .family-combo-text ul li{ 
-	margin: 5px 0 0 35px; 
+	margin: 5px 0 0 20px; 
 	font-family: "Roboto Regular", sans-serif;
 	letter-spacing: 1px; 
 	line-height: 20px; 
