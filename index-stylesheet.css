@@ -7,7 +7,7 @@ filter: saturate(130%);
 
 @-moz-document url-prefix() {
 body{ 
-	filter: saturate(100%); 
+	filter: saturate(80%); 
 }
 }
 *{ 
@@ -54,6 +54,7 @@ a{
 }
 
 .underline{
+	margin-top: -5px; 
 	width: 180px; 
 	border-top: solid 10px rgba(253,106,89,1.00);  
 }
@@ -452,7 +453,7 @@ margin-top: 10px;
 /*celebrate any occasion*/ 
 
 .celebrate-section{
-	padding: 200px 0; 
+	padding: 100px 0; 
 	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
@@ -478,5 +479,123 @@ margin-top: 10px;
 }
 .celebrate-text p{ 
 	margin-top: 10px; 
+}
+
+/*catering section----------------*/ 
+.catering-section{
+	background-color: rgba(254,247,237,1.00); 
+	display: grid; 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(20, 50px); 
+}
+
+.catering-section picture:nth-child(1){ 
+	grid-column: 4/16; 
+	grid-row: 1/11; 
+	max-width: 500px;
+	min-width: 350px; 
+}
+
+.catering-section  picture:nth-child(2){ 
+	grid-column: 14/41; 
+	grid-row: 10/20; 
+	z-index: 1; 
+}
+.catering-text .underline{ 
+margin-top: 10px; 
+}
+.catering-text{ 
+	 grid-column: 20/38;
+	grid-row: 4/9; 
+}
+.catering-text p{ 
+	margin-top: 10px; 
+}
+
+/*about-us-section---------------*/ 
+#about-us{ 
+	padding: 100px 0 0 0; 
+	background-color: rgba(254,247,237,1.00); 
+	display: grid; 
+	grid-template-columns: repeat(20,1fr); 
+	grid-template-rows: repeat(20,50px); 
+}
+
+#about-us picture { 
+	grid-column: 2/12; 
+	grid-row: 1/21; 
+}
+.about-us-text {
+	grid-column: 13/20; 
+	grid-row: 10/21;
+}
+
+.about-us-text p{ 
+	position: relative; 
+	left: 20px; 
+}
+.about-us-text p::before{ 
+	content: ""; 
+	border-left: solid 10px rgba(253,106,89,1.00); 
+	height: 100%; 
+	left: -20px; 
+	position: absolute; 
+}
+
+/*reserve a table---------------*/ 
+#reservation{ 
+	display: grid; 
+	grid-template-columns: repeat(20/1fr); 
+	grid-template-rows: repeat (20/50px); 
+}
+
+#reservation picture{
+	grid-column: 1/21; 
+	grid-row: 1/21; 
+}
+.reservation-form{ 
+	padding: 50px 50px 50px 50px; 
+	grid-column: 14/21; 
+	grid-row: 10/10; 
+	background-color:rgba(255,229,144,1.00);  
+}
+
+form{ 
+	margin-top: 10px; 
+}
+input{ 
+	width: 200px; 
+	height: 30px; 
+	border-radius: 7px; 
+	border: none; 
+	display: block; 
+}
+
+input[type="date"]{ 
+	margin-top: 30px; 
+	display: inline-block; 
+ 	width: 100px; 
+}
+input[type="time"]{ 
+	margin-top: 
+	width: 100px; 
+	display: inline-block; 
+	
+}
+label{ 
+	display: inline-block; 
+	margin-top: 10px; 
+	font-family: "Roboto Regular", sans-serif; 
+}
+
+
+
+
+button{ 
+	background-color:rgba(253,106,89,1.00);
+	padding: 10px 40px; 
+	border-radius: 20px; 
+	border: none; 
+	margin-top: 10px auto 0 auto; 
 }
 
