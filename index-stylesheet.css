@@ -349,9 +349,8 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 
 /*tandoori-section------------*/ 
 .tandoori-section{ 
-background-color: rgba(254,247,237,1.00); 
-	
-display: grid; 
+	background-color: rgba(254,247,237,1.00); 
+	display: grid; 
 	grid-template-columns: 1fr; 
 	grid-template-rows: repeat(32, 50px); 
 }
@@ -388,14 +387,14 @@ display: grid;
 margin-top: 10px; }
 
 .chicken-tikka-text{ 
-	grid-column: 4/15; 
+	grid-column: 4/14; 
 	grid-row: 15/21; 
 }
 
 /*second tandoori section----------------------------------*/ 
 .second-tandoori-section{ 
 	background-color: rgba(254,247,237,1.00); 
-	height: auto; 
+	height: 850px; 
 }
 .second-tandoori{ 
 	display: grid; 
@@ -418,3 +417,66 @@ margin-top: 10px; }
 	text-align: center; 
 	padding-top: 20px;
 }
+
+/*Eggless naan section-----------*/ 
+.eggless-naan-section{
+	background-color: rgba(254,247,237,1.00); 
+	display: grid; 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(20, 50px); 
+}
+
+.eggless-naan-section picture:nth-child(1){ 
+	grid-column: 4/16; 
+	grid-row: 1/11; 
+	max-width: 500px;
+	min-width: 350px; 
+}
+
+.eggless-naan-section  picture:nth-child(2){ 
+	grid-column: 14/41; 
+	grid-row: 10/20; 
+	z-index: 1; 
+}
+.eggless-naan-text .underline{ 
+margin-top: 10px; 
+}
+.eggless-naan-text{ 
+	 grid-column: 20/38;
+	grid-row: 4/9; 
+}
+.eggless-naan-text p{ 
+	margin-top: 10px; 
+}
+
+/*celebrate any occasion*/ 
+
+.celebrate-section{
+	padding: 200px 0; 
+	background-color: rgba(254,247,237,1.00); 
+	display: grid; 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(20, 50px); 
+}
+
+.celebrate-section picture:nth-child(1){ 
+	grid-column:  25/38;
+	grid-row: 1/11; 
+	max-width: 500px;
+	min-width: 350px; 
+}
+
+.celebrate-section  picture:nth-child(2){ 
+	grid-column: 1/27; 
+	grid-row: 10/20; 
+	z-index: 1; 
+}
+
+.celebrate-text{ 
+	 grid-column: 4/24;
+	grid-row: 4/9; 
+}
+.celebrate-text p{ 
+	margin-top: 10px; 
+}
+
