@@ -335,21 +335,44 @@
 			<p>Book your table</p>
 			
 			<form method="post"> 
-			<label for="name">Name</label>
-			<input type="text" name="name">
-				
-			<label for="number">Phone Number</label>
-			<input type="number" name="phone-number"> 
-			
-			<input type="date" name="date">
-			
-			<input type="time" name="time"> 
-				
-			<button type="submit" name="submit"> Send </button>
-			
-			
+				<label for="name">Name</label>
+				<input type="text" name="name">
+
+				<label for="number">Phone Number</label>
+				<input type="number" name="phone-number"> 
+
+				<div class="form-grid">
+					<div> 
+						<label for="date">Date</label>
+						<input type="date" name="date">
+					</div>
+					<div> 
+						<label for="time"> Time</label>
+						<input type="time" name="time"> 
+					</div> 
+				 </div>
+				<p> *Minimum 5 hours of notice</p>
+				<div class="form-button"> 
+					<button type="submit" name="submit"> Send </button>
+				</div>	
 			</form>
 		</div>
+	</div>
+	
+	<div id="review-section"> 
+		<picture> 
+			<source media="(min-width:1200px)" srcset="photos/spices-background-1600.jpg">
+			<source media="(min-width:900px)" srcset="photos/spices-background-1200.jpg"> 
+			<source media="(min-width:400px)" srcset="photos/spices-background-600.jpg"> 
+			<img src="photos/spices-background-400.jpg" alt="Spices" width="100%" height="100%"> 
+		</picture>
+		
+		<div class="reviews"> 
+			<h2>Reviews</h2>
+			<div class="underline"> </div>
+			<img src="photos/quote.svg" alt="quote"> 
+		</div>
+	
 	</div>
 </body>
 </html>
