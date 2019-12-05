@@ -3,6 +3,7 @@
 body{ 
 overflow-x: hidden;
 filter: saturate(130%); 
+background-color: rgba(254,247,237,1.00); 
 }
 
 @-moz-document url-prefix() {
@@ -532,6 +533,7 @@ margin-top: 10px;
 	grid-column: 2/12; 
 	grid-row: 1/21; 
 }
+
 .about-us-text {
 	grid-column: 13/20; 
 	grid-row: 10/21;
@@ -621,4 +623,120 @@ button:hover{
 form p{ 
 	color: rgba(252,51,28,1.00); 
 	margin-top: 5px; 
+}
+
+
+
+/*review section---------------*/ 
+#review-section{ 
+	display: grid; 
+	grid-template-columns:  repeat(40,1fr); 
+	grid-template-rows: repeat(16,50px); 
+	
+}
+
+#review-section picture{ 
+	grid-column: 1/41; 
+	grid-row: 1/21; 
+}
+
+.reviews{ 
+	background-color: rgba(255,229,144,1.00); 
+	grid-column: 8/34; 
+	grid-row:4/14;  
+}
+
+.reviews{ 
+	padding: 40px; 
+	text-align: center; 
+	box-shadow: 15px 15px 5px 0px #B5B5B5; 
+}
+.reviews .underline{ 
+	display: block; 
+	margin: 0 auto; 
+}
+
+.review-text{ 
+	margin: -40px 0 0 0; 
+	display: grid; 
+	grid-template-columns: 1fr 9fr 1fr; 
+	grid-template-rows:  200px; 
+	justify-content:center; 
+	align-items: center; 	
+}
+.review-text p {
+}
+
+#review-second-svg{
+	transform: rotate(180deg);
+}
+
+.arrow rect{ 
+	stroke: #fd6a59;
+}
+
+.arrow .Path_198{ 
+	stroke:  #fd6a59;
+}
+
+.arrow:hover rect{ 
+ fill: #fd6a59;
+}
+.arrow:hover .Path_198{ 
+	stroke: #ffffff;
+}
+
+/*footer--------------*/ 
+
+
+.footer{ 
+	background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	justify-content: center; 
+	padding: 100px 0 50px 0; 
+}
+.footer > div{ 
+	margin-top: 50px; 
+	width: 350px; 
+}
+
+.footer h6{ 
+	font-style:normal; 
+	font-size: 25pt; 
+}
+
+.opening-hours p{ 
+	color: white; 
+}
+
+.contact div{ 
+	margin-top: 15px; 
+}
+.contact div a{ 
+	position: relative; 
+	color: white; 
+	font-family: "Roboto", sans-serif; 
+	letter-spacing: 1px; 
+	text-decoration: none;
+	padding-left: 35px; 
+}
+
+.contact div a:hover{ 
+	color: rgba(254,192,0,1.00); 
+}
+.contact div a svg{ 
+	position: absolute; 
+	left: 2px; 
+	bottom: 1px;
+}
+
+/*icon stying*/ 
+.st0{ 
+ fill: #FD6A59; 
+}
+.st0:hover{ 
+	fill:#FDC200;
 }
