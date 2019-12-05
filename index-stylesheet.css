@@ -2,12 +2,16 @@
 /* CSS Document */
 body{ 
 overflow-x: hidden;
-filter: saturate(130%); 
+}
+
+
+.not-body{ 
+	filter: saturate(130%); 
 background-color: rgba(254,247,237,1.00); 
 }
 
 @-moz-document url-prefix() {
-body{ 
+.not-body{ 
 	filter: saturate(80%); 
 }
 }
@@ -61,7 +65,7 @@ a{
 }
 /*navbar------------------------*/ 
 .desktop-navbar{
-	display: flex;
+	display:flex;
 	z-index: 2;
 	position: relative;
 }
@@ -107,6 +111,59 @@ color:rgba(253,106,89,1.00);
 	transition: all ease-in-out 250ms; 
 }
 
+/*mobile-navbar menu--------------*/ 
+.mobile-navbar{ 
+	position: fixed; 
+	z-index: 10; 
+	width: 100%;
+	top: 0; 
+	display: none; 
+		
+}
+.mobile-navbar-stripe{
+	background-color: black; 
+}
+.hamburger-menu{ 
+	padding: 10px 0 8px 12px; 
+}
+
+.mobile-navbar img{ 
+	position: absolute; 
+	top: 0; 
+	left: 50%; 
+	margin-left: -32.5px; 
+}
+
+.mobile-navbar-stripe a{ 
+	position: absolute; 
+	top: 0; 
+	right: 0; 
+	padding: 12px 10px 0 0; 
+}
+
+.menu-list{ 
+	background-color: rgba(0,0,0,0.85); 
+	height: 100vh; 
+	display: none; 
+}
+.menu-list .close-icon{ 
+	padding: 10px 0 8px 12px;
+}
+.menu-list ul li a{ 
+	font-size: 16pt; 
+	width: 100%; 
+	padding: 10px 0 10px 20px; 
+	text-decoration: none; 
+	font-family:"Roboto", sans-serif; 
+	color: white; 
+	display: block; 
+}
+
+.menu-list a:hover { 
+	background-color: rgba(253,106,89,1.00);
+}
+	
+
 /* hero-section-------------------*/ 
 .hero-section-svg{ 
 position: absolute; 
@@ -130,9 +187,9 @@ left: 60px;
 	height: 767px;
 background: rgb(46,46,61);
 background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
-	position: absolute;
+	position: relative;
 	top: 0; 
-	z-index: 1;
+	z-index: -1;
 }
 
 .hero-section-bowl{ 
@@ -629,28 +686,20 @@ form p{
 
 /*review section---------------*/ 
 #review-section{ 
-	display: grid; 
-	grid-template-columns:  repeat(40,1fr); 
-	grid-template-rows: repeat(16,50px); 
-	
+	padding: 150px 0; 
 }
 
-#review-section picture{ 
-	grid-column: 1/41; 
-	grid-row: 1/21; 
-}
+
 
 .reviews{ 
+	margin: 0 auto; 
+	width: 70%; 
 	background-color: rgba(255,229,144,1.00); 
-	grid-column: 8/34; 
-	grid-row:4/14;  
-}
-
-.reviews{ 
 	padding: 40px; 
 	text-align: center; 
 	box-shadow: 15px 15px 5px 0px #B5B5B5; 
 }
+
 .reviews .underline{ 
 	display: block; 
 	margin: 0 auto; 
@@ -696,7 +745,7 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	flex-direction: row; 
 	flex-wrap: wrap; 
 	justify-content: center; 
-	padding: 100px 0 50px 0; 
+	padding:0px 0 50px 0; 
 }
 .footer > div{ 
 	margin-top: 50px; 
@@ -740,3 +789,37 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 .st0:hover{ 
 	fill:#FDC200;
 }
+
+/*copyright-----------------*/ 
+.copyright{ 
+background-color:black;
+padding: 7px 0; }
+
+.copyright p{ 
+color: white; 
+	text-align: center; 
+}
+
+.copyright a{
+text-decoration: none; 
+color: white; 
+}
+.copyright a:hover{ 
+	color: rgba(254,192,0,1.00); 
+}
+
+/*mobile call to action buttons*/ 
+.mobile-call-to-action{ 
+	z-index: 100;
+	position: fixed; 
+	bottom: 0; 
+	text-decoration: none; 
+	color: white; 
+	background-color: rgba(205,33,31,1.00); 
+	width: 100%; 
+	display: none;
+	text-align: center; 
+	padding: 10px 0; 
+	font-family: Roboto-Regular, "sans-serif"; 
+}
+
