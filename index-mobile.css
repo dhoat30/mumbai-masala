@@ -1,9 +1,9 @@
+
 @media (max-width: 1400px){
 	
 	body{ 
 overflow-x: hidden;
 }
-	
 
 	.mobile-navbar{ 
 		display: block; 
@@ -13,6 +13,4 @@ overflow-x: hidden;
 		display: none; 
 	}
 	
-	
-}
-
+} 
