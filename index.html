@@ -17,6 +17,12 @@
 	 crossorigin="anonymous">
 </script>
 	
+<!----Animation cdn--> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+	
 </head>
 
 <body>
@@ -312,58 +318,59 @@
 	</div>
 	
 	<div class="eggless-naan-section">
-		<picture> 
+		<picture class="eggless-photo-first"> 
 				  <source media="(min-width: 400px)" srcset="photos/chef-holding-naan.jpg">
 				  <img src="photos/chef-holding-naan-400.jpg" alt="Chef Holding Naan" width="100%" height="100%" style="object-fit: cover;">
 		</picture>
 			
-		<picture> 
+		<picture class="eggless-photo-second"> 
 				 <source media="(min-width: 900px)" srcset="photos/naan-in-a-plate.jpg" >
 				  <source media="(min-width: 400px)" srcset="photos/naan-in-a-plate-600.jpg" >
 				  <img src="photos/naan-in-a-plate-400.jpg" alt="Naan in Plate" width="100%" height="100%"  style="object-fit: cover;">
 		</picture>
-			
+			<div class="underline eggless-underline">  </div>
 	  	<div class="eggless-naan-text"> 
 			<h2>Eggless Naan</h2>
-			<div class="underline">  </div>
 		 	<p>We have found a way to make soft Naan Bread without the use of eggs. So, If you are a vegetarian give it a try. </p>
 		</div>
 	</div>
 	
 	<div class="celebrate-section">
-		<picture> 
+		<picture class="celebrate-photo-first"> 
 				  <source media="(min-width: 400px)" srcset="photos/bar.jpg">
 				  <img src="photos/bar-400.jpg"alt="Mumbai Masala Bar Photo" width="100%" height="100%" style="object-fit: cover;">
 		</picture>
 			
-		<picture> 
+		<picture class="celebrate-photo-second"> 
 				 <source media="(min-width: 900px)" srcset="photos/customer-dine-photo.jpg" >
 				  <source media="(min-width: 400px)" srcset="photos/customer-dine-photo-600.jpg" >
 				  <img src="photos/customer-dine-photo-400.jpg" alt="Customer Dine In" width="100%" height="100%"  style="object-fit: cover;">
 		</picture>
-			
+		
+		<div class="underline celebrate-underline">  </div>	
 	  	<div class="celebrate-text"> 
 			<h2>Celebrate Any Occasion</h2>
-			<div class="underline">  </div>
+			
 		 	<p>Our Restaurant offers seating for up to 40 guests. Mumbai Masala will make it impressive as enjoyable. You’ll appreciate top-quality Indian cuisine topped with the selection of fine wines. Chef Yuba will offer you a exciting menu with excellent service staff at your disposal.  </p>
 		</div>
 	</div>
 	
 	<div class="catering-section">
-		<picture> 
+		<picture class="catering-photo-first"> 
 				  <source media="(min-width: 400px)" srcset="photos/bar.jpg">
 				  <img src="photos/bar-400.jpg"alt="Mumbai Masala Bar Photo" width="100%" height="100%" style="object-fit: cover;">
 		</picture>
 			
-		<picture> 
+		<picture class="catering-photo-second"> 
 				 <source media="(min-width: 900px)" srcset="photos/customer-dine-photo.jpg" >
 				  <source media="(min-width: 400px)" srcset="photos/customer-dine-photo-600.jpg" >
 				  <img src="photos/customer-dine-photo-400.jpg" alt="Customer Dine In" width="100%" height="100%"  style="object-fit: cover;">
 		</picture>
-			
+			<div class="underline catering-underline">  </div>
 	  	<div class="catering-text"> 
+			
 			<h2>Catering</h2>
-			<div class="underline">  </div>
+			
 		 	<p>Our Restaurant offers seating for up to 40 guests. Mumbai Masala will make it impressive as enjoyable. You’ll appreciate top-quality Indian cuisine topped with the selection of fine wines. Chef Yuba will offer you a exciting menu with excellent service staff at your disposal.  </p>
 		</div>
 	</div>
@@ -546,18 +553,8 @@
 	</div>
 	
  </div>
+	<script src="index-javascript.js"> </script>
 </body>
 </html>
 
-	<script> 
-		$(".hamburger-menu").click(function(){ 
-			
-			$(".menu-list").show("slow", "swing");
-			$(".hamburger-menu").hide("slow","swing"); 
-		})
-		
-		$(".close-icon").click(function(){ 
-			$(".menu-list").hide("slow","swing"); 
-			$(".hamburger-menu").show("slow","swing"); 
-		})
-	</script>
+	

@@ -542,9 +542,12 @@ margin-top: 10px;
 	grid-row: 4/9; 
 }
 .eggless-naan-text p{ 
-	margin-top: 10px; 
+	margin-top: 20px; 
 }
-
+.eggless-underline{ 
+	grid-column: 20/38;
+	grid-row: 6/7; 
+}
 /*celebrate any occasion*/ 
 
 .celebrate-section{
@@ -580,6 +583,12 @@ margin-top: 10px;
 .celebrate-text p{ 
 	margin-top: 10px; 
 }
+.celebrate-underline{ 
+	 grid-column: 4/24;
+	grid-row: 8/9; 
+	margin-top: -20px; 
+}
+
 
 /*catering section----------------*/ 
 .catering-section{
@@ -614,7 +623,14 @@ margin-top: 10px;
 	grid-row: 4/9; 
 }
 .catering-text p{ 
-	margin-top: 10px; 
+	margin-top: 20px; 
+}
+
+.catering-underline{ 
+	grid-column: 20/38; 
+ grid-row: 6/7; 
+	margin-top: -10px; 
+	 
 }
 
 /*about-us-section---------------*/ 
