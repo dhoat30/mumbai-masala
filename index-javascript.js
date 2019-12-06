@@ -5,10 +5,41 @@
 			$(".hamburger-menu").hide("slow","swing"); 
 		})
 		
-		$(".close-icon").click(function(){ 
+		$(".close-icon").on('click',function(){ 
 			$(".menu-list").hide("slow","swing"); 
 			$(".hamburger-menu").show("slow","swing"); 
 		})
+//paralax----------------------------------
+$(window).scroll(function(){ 
+	parallax(); 
+})
+ 
+ function parallax(){
+	 var wScroll=$(window).scrollTop(); 
+	 console.log(wScroll); 
+	 
+ }
+
+//Review section
+	/*let reviewArray=['You should chain the replace() together instead of assigning the result and replacing again.', 'this is a third review', 'this is a fourth review', 'this is fifith review']; 
+	let paragraph=document.getElementById('review-paragraph'); 
+	let total=0; 
+
+console.log("number of clicks " + total);
+paragraph.innerHTML=reviewArray[total]; 
+	
+	$('#review-second-svg').on('click',function(){
+		count++; 
+		$('#review-frist-svg').on('click', function(){ 
+			count--; 
+		}); 
+		paragraph.innerHTML=reviewArray[count]; 
+		console.log("number of clicks " + count);
+		
+	});  */ 
+
+	 
+		
 
 	//animation for eggless section 
 		var tl3= new TimelineMax(); 
