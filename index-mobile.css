@@ -1,0 +1,28 @@
+
+@media (max-width: 1400px){
+	
+	body{ 
+overflow-x: hidden;
+}
+	.not-body{
+			filter: saturate(100%); 
+background-color: rgba(254,247,237,1.00); 
+	}
+
+@-moz-document url-prefix() {
+.not-body{ 
+	filter: saturate(110%); 
+}
+} 
+	.mobile-navbar{ 
+		display: block; 
+	}
+	
+	.desktop-navbar{ 
+		display: none; 
+	}
+	
+	.hero-section{ 
+		top: -690px; 
+	}
+}
