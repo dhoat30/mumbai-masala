@@ -21,22 +21,16 @@ $(window).scroll(function(){
  }
 
 //Review section
-	/*let reviewArray=['You should chain the replace() together instead of assigning the result and replacing again.', 'this is a third review', 'this is a fourth review', 'this is fifith review']; 
-	let paragraph=document.getElementById('review-paragraph'); 
-	let total=0; 
-
-console.log("number of clicks " + total);
-paragraph.innerHTML=reviewArray[total]; 
+	let reviewArray=['You should chain the replace() together instead of assigning the result and replacing again.', 'this is a third review', 'this is a fourth review', 'this is fifith review']; 
 	
-	$('#review-second-svg').on('click',function(){
+	let count = 0; 
+	let total= 0; 
+	
+	$('#review-second-svg').on('click', function(){ 
 		count++; 
-		$('#review-frist-svg').on('click', function(){ 
-			count--; 
-		}); 
-		paragraph.innerHTML=reviewArray[count]; 
-		console.log("number of clicks " + count);
-		
-	});  */ 
+		$('#review-paragraph').innerHTML=reviewArray[1]; 
+	});
+	 
 
 	 
 		
