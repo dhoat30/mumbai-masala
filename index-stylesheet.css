@@ -2,15 +2,9 @@
 /* CSS Document */
 body{ 
 overflow-x: hidden;
-	filter: saturate(130%); 
-background-color: rgba(254,247,237,1.00); 
+background-color:rgba(255,231,198,1.00); 
 }
 
-@-moz-document url-prefix() {
-body{ 
-	filter: saturate(80%); 
-}
-}
 *{ 
 margin: 0; 
 padding: 0; 
@@ -64,7 +58,13 @@ a{
 	display:flex;
 	z-index: 2;
 	position: relative;
+	filter: saturate(130%)
 }
+
+@-moz-document url-prefix() {
+.desktop-navbar{ 
+	filter: saturate(80%); 
+	}} 
 .desktop-navbar-logo{ 
 margin: 10px 0 0 20px;}
 .navbar { 
@@ -114,8 +114,13 @@ color:rgba(253,106,89,1.00);
 	width: 100%;
 	top: 0; 
 	display: none; 
-		
+	filter: saturate(130%); 	
 }
+
+@-moz-document url-prefix() {
+.mobile-navbar{ 
+	filter: saturate(80%); 
+	}} 
 .mobile-navbar-stripe{
 	background-color: black; 
 }
@@ -186,7 +191,12 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	position: absolute;
 	top: 0; 
 	z-index: 1;
+	filter: saturate(120%); 
 }
+@-moz-document url-prefix() {
+.hero-section{ 
+	filter: saturate(80%); 
+	}} 
 
 .hero-section-bowl{ 
 }
@@ -246,7 +256,12 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 #usp{
 	margin-top: 685px;
 	background-color:rgba(255,229,144,1.00); 
+	filter: saturate(120%); 
 }
+@-moz-document url-prefix() {
+#usp{ 
+	filter: saturate(100%); 
+	}} 
 
 .usp-grid{ 
 	padding: 200px 0; 
@@ -274,9 +289,12 @@ background: rgb(46,46,61);
 background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	position: relative; 
 z-index: -2; 
-	 
+ filter: saturate(120%); 
 }
-
+@-moz-document url-prefix() {
+#specials{ 
+	filter: saturate(100%); 
+	}} 
 .background-decoration{ 
 	transform: rotate(90.3deg);
 	position: absolute; 
@@ -361,7 +379,12 @@ z-index: -2;
 	padding: 100px 0; 
 	background: rgb(46,46,61);
 background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	filter: saturate(120%); 
 }
+@-moz-document url-prefix() {
+.family-combo{ 
+	filter: saturate(100%); 
+}} 
 
 .family-combo-grid{ 
 	display: grid; 
@@ -412,11 +435,15 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 
 /*tandoori-section------------*/ 
 .tandoori-section{ 
-	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: 1fr; 
 	grid-template-rows: repeat(32, 50px); 
+	filter: saturate(120%); 
 }
+@-moz-document url-prefix() {
+.tandoori-section{ 
+	filter: saturate(100%); 
+	}} 
 .tandoor-background img{ 
 	object-fit:cover;
 }
@@ -456,20 +483,22 @@ margin-top: 10px; }
 
 /*second tandoori section----------------------------------*/ 
 .second-tandoori-section{ 
-	background-color: rgba(254,247,237,1.00); 
+	
 	height: 850px; 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+.second-tandoori-section{ 
+	filter: saturate(100%); 
+	}} 
 .second-tandoori{ 
 	display: grid; 
-	grid-template-columns: repeat(auto-fit, minmax(350px, 700px));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 600px));
 	justify-content: center; 
 	grid-column-gap: 40px; 
 	grid-row-gap: 20px; 
 	height: 600px; 
-}
-
-.second-tandoori div{ 
-	border: solid 5px red; 
 }
 .second-tandoori img{ 
 	object-fit: cover; 
@@ -483,12 +512,15 @@ margin-top: 10px; }
 
 /*Eggless naan section-----------*/ 
 .eggless-naan-section{
-	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 
+	filter: saturate(120%); 
 }
-
+@-moz-document url-prefix() {
+.eggless-naan-section{ 
+	filter: saturate(100%); 
+	}} 
 .eggless-naan-section picture:nth-child(1){ 
 	grid-column: 4/16; 
 	grid-row: 1/11; 
@@ -516,11 +548,16 @@ margin-top: 10px;
 
 .celebrate-section{
 	padding: 100px 0; 
-	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+.celebrate-section{ 
+	filter: saturate(100%); 
+	}} 
 
 .celebrate-section picture:nth-child(1){ 
 	grid-column:  25/38;
@@ -545,11 +582,16 @@ margin-top: 10px;
 
 /*catering section----------------*/ 
 .catering-section{
-	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+.catering-section{ 
+	filter: saturate(100%); 
+	}} 
 
 .catering-section picture:nth-child(1){ 
 	grid-column: 4/16; 
@@ -577,11 +619,16 @@ margin-top: 10px;
 /*about-us-section---------------*/ 
 #about-us{ 
 	padding: 100px 0 0 0; 
-	background-color: rgba(254,247,237,1.00); 
 	display: grid; 
 	grid-template-columns: repeat(20,1fr); 
 	grid-template-rows: repeat(20,50px); 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+#about-us{ 
+	filter: saturate(100%); 
+	}} 
 
 #about-us picture { 
 	grid-column: 2/12; 
@@ -610,7 +657,13 @@ margin-top: 10px;
 	display: grid; 
 	grid-template-columns: repeat(20/1fr); 
 	grid-template-rows: repeat (20/50px); 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+#reservation{ 
+	filter: saturate(100%); 
+	}} 
 
 #reservation picture{
 	grid-column: 1/21; 
@@ -684,7 +737,13 @@ form p{
 /*review section---------------*/ 
 #review-section{ 
 	padding: 150px 0; 
+	filter: saturate(120%); 
 }
+
+@-moz-document url-prefix() {
+#review-section{ 
+	filter: saturate(100%); 
+	}} 
 
 
 
@@ -743,7 +802,13 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	flex-wrap: wrap; 
 	justify-content: center; 
 	padding:0px 0 50px 0; 
+	filter: saturate(120%); 
 }
+@-moz-document url-prefix() {
+.footer{ 
+	filter: saturate(100%); 
+	}} 
+
 .footer > div{ 
 	margin-top: 50px; 
 	width: 350px; 
