@@ -9,28 +9,40 @@
 			$(".menu-list").hide("slow","swing"); 
 			$(".hamburger-menu").show("slow","swing"); 
 		})
-//paralax----------------------------------
-$(window).scroll(function(){ 
-	parallax(); 
-})
- 
- function parallax(){
-	 var wScroll=$(window).scrollTop(); 
-	 console.log(wScroll); 
-	 
- }
+
 
 //Review section
-	let reviewArray=['You should chain the replace() together instead of assigning the result and replacing again.', 'this is a third review', 'this is a fourth review', 'this is fifith review']; 
-	
-	let count = 0; 
-	let total= 0; 
-	
-	$('#review-second-svg').on('click', function(){ 
+
+    /* Add your logic here */
+
+
+	let reviewArray = ['While traveling in New Zealand, we have eaten in many Indian restaurants. This is our favorite so far. Delicious food, great atmosphere and friendly staff. We will be back.<span>Bruno Neeser</span>','The most delicious Indian food I have ever tasted! They have an affordable menu. Try the naan bread with almonds was my absolute fave. Would Recommend to everyone! You’ll get your moneys worth.<span>Anika Hunter</span>',"A fabulous place for a meal. I mostly get takeaway of butter chicken with rice & poppa dom. Add Nan bread & it's perfect. Owner Ubah & the Team are great.<span>Graham Highet</span>", "Delicious food.... Bought the chefs special family meal. Loved all the dishes and the family is now nicely satisfied. The boys were very nice at the counter so all around great work.<span>Chris Hedges</span>", "Mumbai massala. Lovely food and service. Very friendly and lunch is absolutely value for money. Will definitely return. Lamb sagwala is amazing. So is their butter chicken.<span> Fleur</span>", "Consistently good food, nice friendly staff and fairly priced. On our most recent trip, partner and I both agreeed it was the best restaurant meal we have had ages.<span>Adam El-Agez</span>","Tasty, traditional Indian cuisine, great choice for vegetarians. Good value for money. Sensational and friendly service of the staff. Highly recommended. Take Away menu is offered<span>Viktoria Makarov</span>" ]; 
+  	
+	let count=0; 
+	$("#review-second-svg").on('click', function(){ 
+		
 		count++; 
-		$('#review-paragraph').innerHTML=reviewArray[1]; 
-	});
-	 
+		if (count==7){ 
+			count=0; 
+		}
+		document.getElementById('review-paragraph').innerHTML = reviewArray[count]; 
+		let numbers=reviewArray.length; 
+		console.log(numbers); 
+		console.log("counting" + count); 
+	})
+
+	$('#review-first-svg').on('click',function(){ 
+		count--; 
+		if (count==-1){ 
+			count=7; 
+		}
+		document.getElementById('review-paragraph').innerHTML = reviewArray[count]; 
+		console.log("-- counting "+count); 
+		
+		
+	})
+
+	
 
 	 
 		

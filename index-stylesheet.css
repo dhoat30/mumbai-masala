@@ -795,9 +795,32 @@ form p{
 	justify-content:center; 
 	align-items: center; 	
 }
-.review-text p {
+
+#review-paragraph{ 
+	font-style: italic;
+	font-size: 14pt; 
 }
 
+#review-paragraph span{ 
+	display: block; 
+	text-align: right; 
+	margin-top: 10px; 
+	font-family: "Roboto Black", sans-serif; 
+	font-weight: 900; 
+	font-size: 16pt;
+	font-style: normal; 
+	
+}
+/*#review-paragraph#special::after{
+	content: 'Gurpreet Dhoat'; 
+	display: block; 
+	text-align: right; 
+	margin-top: 20px; 
+	font-family: "Roboto Black", sans-serif; 
+	font-weight: 900; 
+	font-size: 16pt;
+	font-style: normal; 
+}*/ 
 #review-second-svg{
 	transform: rotate(180deg);
 }
