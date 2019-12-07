@@ -670,7 +670,7 @@ margin-top: 10px;
 	position: relative; 
 	left: 20px; 
 }
-.about-us-text p::before{ 
+ .about-us-paragraph::before{ 
 	content: ""; 
 	border-left: solid 10px rgba(253,106,89,1.00); 
 	height: 100%; 

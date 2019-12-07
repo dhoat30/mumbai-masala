@@ -52,8 +52,10 @@
 		var tl4= new TimelineMax({onUpdate:updatePercentage}); 
 		const controllerEggless= new ScrollMagic.Controller(); 
 		
-		tl3.from(".eggless-photo-first", 1, {x:-200, opacity:0 }); 
-		tl3.from(".eggless-photo-second", 1, {x:200, opacity:0 }); 
+		tl3.from(".eggless-naan-text", 0.5, {x:200, opacity:0}); 
+		tl3.from(".eggless-photo-first", 0.5, {x:-200, opacity:0 }); 
+		tl3.from(".eggless-photo-second", 0.4, {x:200, opacity:0 }); 
+	
 
 	//automatic animation
 		const sceneEggless = new ScrollMagic.Scene({
@@ -64,14 +66,11 @@
 
 	//set on scroll 
 		tl4.from(".eggless-underline",0.5, { width:0, opacity: 0}); 
-		tl4.from(".eggless-naan-text", 0.5, {x:200, opacity:0}); 
-	
-
 
 		const sceneEggless2 = new ScrollMagic.Scene({
   triggerElement: ".eggless-naan-section",
             triggerHook: "onLeave",
-            duration: "100%"
+            duration: "80%"
 })
   .setPin(".eggless-naan-section")
   .setTween(tl4)
@@ -87,8 +86,10 @@
 		var tl6= new TimelineMax({onUpdate:updatePercentageCelebrate}); 
 		const controllerCelebrate= new ScrollMagic.Controller(); 
 		
-		tl5.from(".celebrate-photo-first", 1, {x:200, opacity:0 }); 
-		tl5.from(".celebrate-photo-second", 1, {x:-200, opacity:0 }); 
+		tl5.from(".celebrate-text", 0.5, {x:-200, opacity:0}); 
+	
+		tl5.from(".celebrate-photo-first", 0.5, {x:200, opacity:0 }); 
+		tl5.from(".celebrate-photo-second", 0.4, {x:-200, opacity:0 }); 
 
 	//automatic animation
 		const sceneCelebrate = new ScrollMagic.Scene({
@@ -98,15 +99,15 @@
 		.addTo(controllerCelebrate);
 
 	//set on scroll 
+		
 		tl6.from(".celebrate-underline",0.5, { width:0, opacity: 0}); 
-		tl6.from(".celebrate-text", 0.5, {x:-200, opacity:0}); 
 	
 
 
 		const sceneCelebrate2 = new ScrollMagic.Scene({
   triggerElement: ".celebrate-section",
             triggerHook: "onLeave",
-            duration: "100%"
+            duration: "80%"
 })
   .setPin(".celebrate-section")
   .setTween(tl6)
@@ -123,8 +124,9 @@
 		var tl= new TimelineMax(); 
 		const controller= new ScrollMagic.Controller(); 
 		
-		tl.from(".catering-photo-first", 1, {x:-200, opacity:0 }); 
-		tl.from(".catering-photo-second", 0.5, {x:200, opacity:0 }); 
+		tl.from(".catering-text", 0.5, {x:200, opacity:0}); 
+		tl.from(".catering-photo-first", 0.5, {x:-200, opacity:0 }); 
+		tl.from(".catering-photo-second", 0.4, {x:200, opacity:0 }); 
 
 	//automatic animation
 		const scene1 = new ScrollMagic.Scene({
@@ -135,14 +137,10 @@
 
 	//set on scroll 
 		tl2.from(".catering-underline",0.5, { width:0, opacity: 0}); 
-		tl2.from(".catering-text", 0.5, {x:200, opacity:0}); 
-	
-
-
 		const scene2 = new ScrollMagic.Scene({
   triggerElement: ".catering-section",
             triggerHook: "onLeave",
-            duration: "100%"
+            duration: "80%"
 })
   .setPin(".catering-section")
   .setTween(tl2)
@@ -152,4 +150,21 @@
 				tl2.progress(); 
 				console.log(tl2.progress()); 
 				}
+			
+//animation for about us section 
+		var tl7= new TimelineMax(); 
+		var tl8= new TimelineMax({onUpdate:updatePercentageCelebrate}); 
+		const controllerAboutUs= new ScrollMagic.Controller(); 
+		
+		tl7.from(".about-us-paragraph", 4, {height:0}); 
+
+	//automatic animation
+		const sceneAboutUs = new ScrollMagic.Scene({
+  triggerElement: ".about-us-text",
+})
+  .setTween(tl7)
+		.addTo(controllerAboutUs);
+
+
+	
 			
