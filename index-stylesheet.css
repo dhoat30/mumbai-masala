@@ -178,9 +178,23 @@ position: absolute;
 left: 60px;
 	top: 50%; 
 	margin-top: -125px; 
-	border: 5px dashed red; 
-	border-radius: 50%;
+	/*border: 5px dashed red; 
+	border-radius: 50%;*/
 	padding: 10px; 
+	/*animation-name: butter-chicken-bowl; 
+	animation-duration: 10s; 
+	animation-iteration-count: infinite; 
+	animation-direction: normal; 
+	animation-timing-function: linear;*/
+}
+.circle{ 
+width: 
+}
+
+
+@keyframes butter-chicken-bowl{ 
+	0%{ transform: rotate(0deg)}
+	100%{transform: rotate(360deg)}
 }
 
 
@@ -468,12 +482,13 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 .tandoori-section{ 
 	display: grid; 
 	grid-template-columns: 1fr; 
-	grid-template-rows: repeat(32, 50px); 
+	grid-template-rows: repeat(32, 31px); 
 	filter: saturate(120%); 
+
 }
 @-moz-document url-prefix() {
 .tandoori-section{ 
-	filter: saturate(100%); 
+	filter: saturate(100%);
 	}} 
 .tandoor-background{ 
 	background-image: url("photos/tandoori-background.jpg"); 
@@ -486,8 +501,9 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 }
  
 .tandoori-details{
+
 	z-index: 2; 
-	margin-top: 450px; 
+	margin-top: -200px; 
 	padding: 100px 0; 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
@@ -932,4 +948,10 @@ color: white;
 	padding: 10px 0; 
 	font-family: Roboto-Regular, "sans-serif"; 
 }
+/*back to home------------*/ 
+.back-to-home{ 
+	position: fixed; 
+	bottom: 20px; 
+	right: 20px; 
 
+}

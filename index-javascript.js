@@ -10,6 +10,11 @@
 			$(".hamburger-menu").show("slow","swing"); 
 		})
 
+		$(".menu-list").on('click', function(){ 
+			$(".menu-list").hide("slow","swing"); 
+			$(".hamburger-menu").show("slow","swing"); 
+		})
+
 
 //Review section
 
@@ -45,14 +50,45 @@
 	
 
 	 
+	if ($(window).width()>550){
 		
+		//animation for tandoori section 
+		var tl9= new TimelineMax({onUpdate:updatePercentageCatering}); 
+		var tl10= new TimelineMax(); 
+		const controllerTandooriSection= new ScrollMagic.Controller(); 
+		
+		tl10.from(".tandoori-details-text", 1, {opacity:0.2}); 
+		tl10.from(".tandoori-first-photo", 0.5, {x:-200, opacity:0 }); 
+		tl10.from(".tandoori-second-photo", 0.4, {x:200, opacity:0 }); 
 
+	//automatic animation
+		const sceneTandoori = new ScrollMagic.Scene({
+  triggerElement: ".tandoori-section",
+})
+  .setTween(tl10)
+		.addTo(controllerTandooriSection);
+
+	//set on scroll 
+		tl9.from(".tandoori-underline",0.5, { width:0, opacity: 0}); 
+		const scene2 = new ScrollMagic.Scene({
+  triggerElement: ".tandoori-section",
+            triggerHook: "onLeave",
+            duration: "80%"
+})
+  .setPin(".tandoori-section")
+  .setTween(tl9)
+		.addTo(controllerTandooriSection);
+		
+		function updatePercentageCatering(){ 
+				tl9.progress(); 
+				console.log(tl9.progress()); 
+				}	
 	//animation for eggless section 
 		var tl3= new TimelineMax(); 
 		var tl4= new TimelineMax({onUpdate:updatePercentage}); 
 		const controllerEggless= new ScrollMagic.Controller(); 
 		
-		tl3.from(".eggless-naan-text", 0.5, {x:200, opacity:0}); 
+		tl3.from(".eggless-naan-text", 1, {opacity:0.2});
 		tl3.from(".eggless-photo-first", 0.5, {x:-200, opacity:0 }); 
 		tl3.from(".eggless-photo-second", 0.4, {x:200, opacity:0 }); 
 	
@@ -86,7 +122,7 @@
 		var tl6= new TimelineMax({onUpdate:updatePercentageCelebrate}); 
 		const controllerCelebrate= new ScrollMagic.Controller(); 
 		
-		tl5.from(".celebrate-text", 0.5, {x:-200, opacity:0}); 
+		tl5.from(".celebrate-text", 1, {opacity:0.2});
 	
 		tl5.from(".celebrate-photo-first", 0.5, {x:200, opacity:0 }); 
 		tl5.from(".celebrate-photo-second", 0.4, {x:-200, opacity:0 }); 
@@ -119,12 +155,12 @@
 				}
 			
 
-		//animation for special section 
+		//animation for Catering section 
 		var tl2= new TimelineMax({onUpdate:updatePercentageCatering}); 
 		var tl= new TimelineMax(); 
 		const controller= new ScrollMagic.Controller(); 
 		
-		tl.from(".catering-text", 0.5, {x:200, opacity:0}); 
+		tl.from(".catering-text", 1, {opacity:0.2});
 		tl.from(".catering-photo-first", 0.5, {x:-200, opacity:0 }); 
 		tl.from(".catering-photo-second", 0.4, {x:200, opacity:0 }); 
 
@@ -137,7 +173,7 @@
 
 	//set on scroll 
 		tl2.from(".catering-underline",0.5, { width:0, opacity: 0}); 
-		const scene2 = new ScrollMagic.Scene({
+		const sceneCatering = new ScrollMagic.Scene({
   triggerElement: ".catering-section",
             triggerHook: "onLeave",
             duration: "80%"
@@ -165,6 +201,6 @@
   .setTween(tl7)
 		.addTo(controllerAboutUs);
 
-
+	}
 	
 			
