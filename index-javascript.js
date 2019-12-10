@@ -58,8 +58,8 @@
 		const controllerTandooriSection= new ScrollMagic.Controller(); 
 		
 		tl10.from(".tandoori-details-text", 1, {opacity:0.2}); 
-		tl10.from(".tandoori-first-photo", 0.5, {x:-200, opacity:0 }); 
-		tl10.from(".tandoori-second-photo", 0.4, {x:200, opacity:0 }); 
+		tl10.from(".tandoori-first-photo", 0.5, {x:200, opacity:0 }); 
+		tl10.from(".tandoori-second-photo", 0.4, {x:-200, opacity:0 }); 
 
 	//automatic animation
 		const sceneTandoori = new ScrollMagic.Scene({

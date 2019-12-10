@@ -178,18 +178,16 @@ position: absolute;
 left: 60px;
 	top: 50%; 
 	margin-top: -125px; 
-	/*border: 5px dashed red; 
-	border-radius: 50%;*/
+	border: 5px dashed red; 
+	border-radius: 50%;
 	padding: 10px; 
 	/*animation-name: butter-chicken-bowl; 
-	animation-duration: 10s; 
+	animation-duration: 30s; 
 	animation-iteration-count: infinite; 
 	animation-direction: normal; 
 	animation-timing-function: linear;*/
 }
-.circle{ 
-width: 
-}
+
 
 
 @keyframes butter-chicken-bowl{ 
@@ -390,14 +388,14 @@ z-index: -2;
 }
 
 /* family combo------------*/ 
-.family-combo { 
+#menu-and-combo { 
 	padding: 100px 0; 
 	background: rgb(46,46,61);
 background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	filter: saturate(120%); 
 }
 @-moz-document url-prefix() {
-.family-combo{ 
+#menu-and-combo{ 
 	filter: saturate(100%); 
 }} 
 
@@ -448,36 +446,15 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	line-height: 20px; 
 }
 
+/*menu-------------*/ 
 
-
-/*second tandoori section----------------------------------*/ 
-.second-tandoori-section{ 
-	
-	height: 850px; 
-	filter: saturate(120%); 
-}
-
-@-moz-document url-prefix() {
-.second-tandoori-section{ 
-	filter: saturate(100%); 
-	}} 
-.second-tandoori{ 
-	display: grid; 
-	grid-template-columns: repeat(auto-fit, minmax(350px, 600px));
-	justify-content: center; 
-	grid-column-gap: 40px; 
-	grid-row-gap: 20px; 
-	height: 600px; 
-}
-.second-tandoori img{ 
-	object-fit: cover; 
-}
-
-.second-tandoori h3{ 
-	width: 100%; 
+#menu h2{ 
+	padding-top: 100px;
+	color: rgba(254,192,0,1.00); 
 	text-align: center; 
-	padding-top: 20px;
 }
+
+
 /*tandoori-section------------*/ 
 .tandoori-section{ 
 	display: grid; 
