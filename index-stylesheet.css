@@ -459,15 +459,92 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	justify-content: center; 
 	flex-wrap: wrap; 
 	padding: 50px 0; 
-	
 }
-.menu-stamp img{ 
-	width: 350px; 
-	height: auto; 
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+	border-radius: 50%; 
 	margin: 0 20px; 
 }
+.flip-box a{ 
+	background-color: rgba(255,229,144,1.00); 
+	font-family: 'Roboto Regular', sans-serif; 
+	font-weight: 900; 
+	padding: 15px 0; 
+	width: 200px;
+	display:block; 
+	text-align: center; 
+	margin: -15px auto 0 auto;
+	border-radius: 20px; 
+	color:rgba(120,120,120,1.00); 
+	text-decoration: none; 
+	position: relative; 
+	top: 50%; 
+	z-index: 4; 
+}
+.flip-box a:hover{
+	background-color: rgba(254,192,0,1.00); 
+	color: white;
+}
 
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back-takeaway, .flip-box-back-lunch, .flip-box-back-dine {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  color: black;
+	background-repeat: no-repeat; 
+	width: 300px; 
+	height: 300px;
+}
+/* Style the back side */
+.flip-box-back-takeaway {
+  background-image: url("photos/catering-400.jpg"); 
+  color: white;
+  transform: rotateY(180deg);
+	border-radius: 50%; 
+}
+.flip-box-back-lunch{ 
+	 background-image: url("photos/chicken-tikka-400.jpg"); 
+  color: white;
+  transform: rotateY(180deg);
+	border-radius: 50%;
+	background-size: cover; 
+	
+}
+
+.flip-box-back-dine{ 
+	 background-image: url("photos/tandoori-chicken.jpg");
+  color: white;
+  transform: rotateY(180deg);
+	border-radius: 50%;
+	background-size: cover; 
+}
 /*tandoori-section------------*/ 
 .tandoori-section{ 
 	display: grid; 
@@ -531,6 +608,7 @@ margin-top: 10px; }
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 
 	filter: saturate(120%); 
+	padding: 30px 0; 
 }
 @-moz-document url-prefix() {
 .eggless-naan-section{ 
@@ -565,7 +643,7 @@ margin-top: 10px;
 /*celebrate any occasion*/ 
 
 .celebrate-section{
-	padding: 100px 0; 
+	padding: 30px 0; 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 
@@ -606,6 +684,7 @@ margin-top: 10px;
 
 /*catering section----------------*/ 
 .catering-section{
+	padding: 30px 0; 
 	display: grid; 
 	grid-template-columns: repeat(40, 1fr); 
 	grid-template-rows: repeat(20, 50px); 

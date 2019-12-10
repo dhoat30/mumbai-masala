@@ -15,7 +15,6 @@
 			$(".hamburger-menu").show("slow","swing"); 
 		})
 
-
 //Review section
 
     /* Add your logic here */
