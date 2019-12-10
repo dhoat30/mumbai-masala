@@ -454,6 +454,19 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	text-align: center; 
 }
 
+.menu-stamp{ 
+	display: flex; 
+	justify-content: center; 
+	flex-wrap: wrap; 
+	padding: 50px 0; 
+	
+}
+.menu-stamp img{ 
+	width: 350px; 
+	height: auto; 
+	margin: 0 20px; 
+}
+
 
 /*tandoori-section------------*/ 
 .tandoori-section{ 
