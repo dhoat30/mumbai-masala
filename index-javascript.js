@@ -52,139 +52,100 @@
 	if ($(window).width()>550){
 		
 		//animation for tandoori section 
-		var tl9= new TimelineMax({onUpdate:updatePercentageCatering}); 
+	var tl9= new TimelineMax({onUpdate:updatePercentageCatering}); 
 		var tl10= new TimelineMax(); 
 		const controllerTandooriSection= new ScrollMagic.Controller(); 
 		
 		tl10.from(".tandoori-details-text", 1, {opacity:0.2, y:100}); 
-		tl10.from(".tandoori-first-photo", 1, {width:0}); 
-		tl10.from(".tandoori-second-photo", 0.4, {y:-50}); 
+		tl10.from(".tandoori-first-photo", 1, {width:0, y:100}); 
+		tl10.from(".tandoori-underline",0.5, { width:0}); 
 
 	//automatic animation
 		const sceneTandoori = new ScrollMagic.Scene({
   triggerElement: ".tandoori-section",
+	triggerHook:0.7,
+	duration:"80%"
 })
   .setTween(tl10)
-		.addTo(controllerTandooriSection);
-
-	//set on scroll 
-		tl9.from(".tandoori-underline",0.5, { width:0, opacity: 0}); 
-		const scene2 = new ScrollMagic.Scene({
-  triggerElement: ".tandoori-section",
-            triggerHook: "onLeave",
-            duration: "80%"
-})
-  .setPin(".tandoori-section")
-  .setTween(tl9)
+			.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
 		.addTo(controllerTandooriSection);
 		
-		function updatePercentageCatering(){ 
-				tl9.progress(); 
-				console.log(tl9.progress()); 
-				}	
+
 	//animation for eggless section 
 		var tl3= new TimelineMax(); 
-		var tl4= new TimelineMax({onUpdate:updatePercentage}); 
 		const controllerEggless= new ScrollMagic.Controller(); 
-		
-		tl3.from(".eggless-naan-text", 1, {opacity:0.2});
-		tl3.from(".eggless-photo-first", 0.5, {x:-200, opacity:0 }); 
-		tl3.from(".eggless-photo-second", 0.4, {x:200, opacity:0 }); 
+		tl3.from(".eggless-naan-text", 1,  {opacity:0.2, y:100}); 
+		tl3.from(".eggless-photo-first", 1,  {width:0, y:100});
+		tl3.from(".eggless-underline",0.5, { width:0}); 
 	
 
 	//automatic animation
 		const sceneEggless = new ScrollMagic.Scene({
   triggerElement: ".eggless-naan-section",
+			triggerHook:0.7,
+	duration:"80%"
 })
   .setTween(tl3)
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
 		.addTo(controllerEggless);
-
-	//set on scroll 
-		tl4.from(".eggless-underline",0.5, { width:0, opacity: 0}); 
-
-		const sceneEggless2 = new ScrollMagic.Scene({
-  triggerElement: ".eggless-naan-section",
-            triggerHook: "onLeave",
-            duration: "80%"
-})
-  .setPin(".eggless-naan-section")
-  .setTween(tl4)
-		.addTo(controllerEggless);
-		
-		function updatePercentage(){ 
-				tl4.progress(); 
-				console.log(tl4.progress()); 
-				}
 
 //animation for celebrate section 
 		var tl5= new TimelineMax(); 
-		var tl6= new TimelineMax({onUpdate:updatePercentageCelebrate}); 
 		const controllerCelebrate= new ScrollMagic.Controller(); 
 		
-		tl5.from(".celebrate-text", 1, {opacity:0.2});
-	
-		tl5.from(".celebrate-photo-first", 0.5, {x:200, opacity:0 }); 
-		tl5.from(".celebrate-photo-second", 0.4, {x:-200, opacity:0 }); 
+		tl5.from(".celebrate-text", 1, {opacity:0.2, y:100}); 
+		tl5.from(".celebrate-photo-first", 1, {width:0, y:100});
+		tl5.from(".celebrate-underline", 0.5, { width:0}); 
 
 	//automatic animation
 		const sceneCelebrate = new ScrollMagic.Scene({
   triggerElement: ".celebrate-section",
+triggerHook:0.7,
+	duration:"90%"
 })
   .setTween(tl5)
-		.addTo(controllerCelebrate);
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
+		.addTo(controllerEggless);
 
-	//set on scroll 
-		
-		tl6.from(".celebrate-underline",0.5, { width:0, opacity: 0}); 
-	
-
-
-		const sceneCelebrate2 = new ScrollMagic.Scene({
-  triggerElement: ".celebrate-section",
-            triggerHook: "onLeave",
-            duration: "80%"
-})
-  .setPin(".celebrate-section")
-  .setTween(tl6)
-		.addTo(controllerCelebrate);
-		
-		function updatePercentageCelebrate(){ 
-				tl6.progress(); 
-				console.log(tl6.progress()); 
-				}
-			
-
-		//animation for Catering section 
-		var tl2= new TimelineMax({onUpdate:updatePercentageCatering}); 
+	/*	//animation for Catering section 
 		var tl= new TimelineMax(); 
 		const controller= new ScrollMagic.Controller(); 
 		
-		tl.from(".catering-text", 1, {opacity:0.2});
-		tl.from(".catering-photo-first", 0.5, {x:-200, opacity:0 }); 
-		tl.from(".catering-photo-second", 0.4, {x:200, opacity:0 }); 
+		tl.from(".catering-text", 1, {opacity:0.2, y:100}); 
+		tl.from(".catering-photo-first", 1, {width:0, y:100});
+		tl.from(".catering-underline",  0.5, { width:0}); 
 
 	//automatic animation
 		const scene1 = new ScrollMagic.Scene({
   triggerElement: ".catering-section",
+	triggerHook:0.7,
+	duration:"90%"
 })
   .setTween(tl)
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
 		.addTo(controller);
-
-	//set on scroll 
-		tl2.from(".catering-underline",0.5, { width:0, opacity: 0}); 
-		const sceneCatering = new ScrollMagic.Scene({
-  triggerElement: ".catering-section",
-            triggerHook: "onLeave",
-            duration: "80%"
-})
-  .setPin(".catering-section")
-  .setTween(tl2)
-		.addTo(controller);
-		
-		function updatePercentageCatering(){ 
-				tl2.progress(); 
-				console.log(tl2.progress()); 
-				}
+*/
+	
 			
 //animation for about us section 
 		var tl7= new TimelineMax(); 
