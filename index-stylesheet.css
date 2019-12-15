@@ -294,6 +294,87 @@ background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
 	display: block; 
 	margin: 0 auto; 
 }
+/*spiciness-------------*/ 
+.spiceness{ 
+	background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	position: relative; 
+	z-index: -10; 
+	text-align: center; 
+	color: rgba(254,192,0,1.00);
+	padding: 100px 0; 
+}
+
+.spice-flex{ 
+	margin-top: 50px; 
+	width: 100%; 
+	display: flex; 
+	justify-content: center; 
+	flex-wrap: wrap; 
+}
+.spiceMild, .spiceMedium, .spiceHot{ 
+ position: relative; 
+	padding: 100px 0 100px 0; 
+	width: 300px;
+	z-index: -3;
+}
+
+#counter{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+
+#circle1, #circleMedium, #circleHot{
+    height: 165px;
+    width: 165px;
+    background-color:#FFE281;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+#shadowring, #shadowringMedium, #shadowringHot{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #FF1B00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+}
+#circle2, #circleMedium2, #circleHot2{
+    height: 196px;
+    width: 196px;
+    background-color:#FFB5AC;
+    border-radius: 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+#counterMedium{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
+
+#counterHot{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+}
 
 /*-Specials------------------------------*/ 
 #specials{ 

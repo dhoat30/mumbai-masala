@@ -38,7 +38,7 @@
 	$('#review-first-svg').on('click',function(){ 
 		count--; 
 		if (count==-1){ 
-			count=7; 
+			count=6; 
 		}
 		document.getElementById('review-paragraph').innerHTML = reviewArray[count]; 
 		console.log("-- counting "+count); 
@@ -204,31 +204,161 @@ triggerHook:0.4,
 			colorEnd: '#75C695'
 		})
 		.addTo(controllerVisitIndia);
-		
-			//animation for visit india section 
-		
-		var tl21= new TimelineMax(); 
-		const controllerVisitIndia= new ScrollMagic.Controller(); 
-		tl21.from(".about-us-foreground", 1, {opacity:0}); 
-		tl21.from(".parallax-paragraph", 0.5, {opacity:0, y:200}); 
-			
-		
 
-	//automatic animation
-		const sceneParallax = new ScrollMagic.Scene({
-  triggerElement: ".about-us-parallax",
-triggerHook:0.4,
-	duration:"90%"
+//Spice Section
+			
+	 var waypointMild = new Waypoint({
+  element: document.getElementsByClassName('spiceMild'),
+		 
+  handler: function(direction) {
+	  if(direction=='down'){
+	console.log('scrolled to the postion'); 
+        var counter = document.getElementById('counter').getContext('2d');
+        var no = 0; // Starting Point
+        var pointToFill = 4.72;  //Point from where you want to fill the circle
+        var cw = counter.canvas.width;  //Return canvas width
+        var ch = counter.canvas.height; //Return canvas height
+        var diff;   // find the different between current value (no) and trageted value (100)
+        
+        function fillCounter(){
+           diff = ((no/100) * Math.PI*2*10);
+            
+            counter.clearRect(0,0,cw,ch);   // Clear canvas every time when function is call
+            
+            counter.lineWidth = 15;     // size of stroke
+            
+            counter.strokeStyle = '#FD1A00';    // Stroke Color
+			
+            counter.textAlign = 'center';
+            
+            counter.font = "30px roboto";    //set font size and face
+            
+            counter.fillText('Mild',100,110);       //fillText(text,x,y);
+         
+            counter.beginPath();
+            counter.arc(100,100,90,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
+            
+            counter.stroke();   // to fill stroke
+            
+            // now add condition
+            
+            if(no >= 33)
+            {
+                clearTimeout(fill);     //fill is a variable that call the function fillcounter()
+            }
+            no++;
+        }
+        
+        //now call the function
+        var fill = setInterval(fillCounter,40);     //call the fillCounter function after every 50MS
+   
+	  }
+	}, 
+		 offset: 300
 })
-  .setTween(tl21)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
-		.addTo(controllerVisitIndia);
+	 
+	  var waypointMedium = new Waypoint({
+  element: document.getElementsByClassName('spiceMedium'),
+		 
+  handler: function(direction) {
+	  if(direction=='down'){
+	console.log('scrolled to the postion'); 
+        var counter = document.getElementById('counterMedium').getContext('2d');
+        var no = 0; // Starting Point
+        var pointToFill = 4.72;  //Point from where you want to fill the circle
+        var cw = counter.canvas.width;  //Return canvas width
+        var ch = counter.canvas.height; //Return canvas height
+        var diff;   // find the different between current value (no) and trageted value (100)
+        
+        function fillCounter(){
+           diff = ((no/100) * Math.PI*2*10);
+            
+            counter.clearRect(0,0,cw,ch);   // Clear canvas every time when function is call
+            
+            counter.lineWidth = 15;     // size of stroke
+            
+            counter.strokeStyle = '#FD1A00';    // Stroke Color
+            
+			counter.fillStyle = '#000';     // color that you want to fill in counter/circle
+			
+            counter.textAlign = 'center';
+            
+            counter.font = "30px roboto";    //set font size and face
+            
+            counter.fillText('Medium',100,110);       //fillText(text,x,y);
+            
+            counter.beginPath();
+            counter.arc(100,100,90,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
+            
+            counter.stroke();   // to fill stroke
+            
+            // now add condition
+            
+            if(no >= 66)
+            {
+                clearTimeout(fill);     //fill is a variable that call the function fillcounter()
+            }
+            no++;
+        }
+        
+        //now call the function
+        var fill = setInterval(fillCounter,20);     //call the fillCounter function after every 50MS
+   
+	  }
+	}, 
+		 offset: 300
+})
+	  
+	  	  var waypointHot = new Waypoint({
+  element: document.getElementsByClassName('spiceHot'),
+		 
+  handler: function(direction) {
+	  if(direction=='down'){
+	console.log('scrolled to the postion'); 
+        var counter = document.getElementById('counterHot').getContext('2d');
+        var no = 0; // Starting Point
+        var pointToFill = 4.72;  //Point from where you want to fill the circle
+        var cw = counter.canvas.width;  //Return canvas width
+        var ch = counter.canvas.height; //Return canvas height
+        var diff;   // find the different between current value (no) and trageted value (100)
+        
+        function fillCounter(){
+           diff = ((no/100) * Math.PI*2*10);
+            
+            counter.clearRect(0,0,cw,ch);   // Clear canvas every time when function is call
+            
+            counter.lineWidth = 15;     // size of stroke
+            
+            counter.fillStyle = '#000';     // color that you want to fill in counter/circle
+            
+            counter.strokeStyle = '#FD1A00';    // Stroke Color
+            
+            counter.textAlign = 'center';
+            
+            counter.font = "30px roboto";    //set font size and face
+            
+            counter.fillText('Hot',100,110);       //fillText(text,x,y);
+            
+            counter.beginPath();
+            counter.arc(100,100,90,pointToFill,diff/10+pointToFill);    //arc(x,y,radius,start,stop)
+            
+            counter.stroke();   // to fill stroke
+            
+            // now add condition
+            
+            if(no >= 100)
+            {
+                clearTimeout(fill);     //fill is a variable that call the function fillcounter()
+            }
+            no++;
+        }
+        
+        //now call the function
+        var fill = setInterval(fillCounter,20);     //call the fillCounter function after every 50MS
+   
+	  }
+	}, 
+		 offset: 300
+})
 	
 	}
-	
-			
