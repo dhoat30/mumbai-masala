@@ -731,10 +731,31 @@ margin-top: 10px;
 	background-image: url("photos/about-us-parallax.jpg"); 
 	background-attachment: fixed; 
 	width: 100%; 
-	height: 800px; 
 	background-repeat: no-repeat; 
 	background-size: cover; 
 	background-position: center; 
+	position: relative; 
+	padding: 400px 0; 
+	z-index: -2; 
+}
+.about-us-foreground{ 
+background-color: rgba(0,0,0,0.7); 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: -1; 
+}
+.about-us-parallax p{ 
+	color: white; 
+	font-size: 20pt; 
+	font-weight: 100; 
+	font-family: "Roboto Regular", sans-serif; 
+	text-align: center; 
+	width: 70%; 
+	margin: 0 auto; 
+	max-width: 900px; 
 }
 #about-us{ 
 	padding: 100px 0 0 0; 
@@ -742,7 +763,6 @@ margin-top: 10px;
 	grid-template-columns: repeat(20,1fr); 
 	grid-template-rows: repeat(20,50px); 
 	filter: saturate(120%); 
-	border: solid red; 
 }
 
 @-moz-document url-prefix() {

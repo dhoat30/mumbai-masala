@@ -56,9 +56,11 @@
 		var tl10= new TimelineMax(); 
 		const controllerTandooriSection= new ScrollMagic.Controller(); 
 		
-		tl10.from(".tandoori-details-text", 1, {opacity:0.2, y:100}); 
+		
+		tl10.from(".tandoori-details-text", 1, {opacity:0.2, y:100});  
 		tl10.from(".tandoori-first-photo", 1, {width:0, y:100}); 
-		tl10.from(".tandoori-underline",0.5, { width:0}); 
+		tl10.from(".tandoori-underline",0.5, { width:0});
+		
 
 	//automatic animation
 		const sceneTandoori = new ScrollMagic.Scene({
@@ -120,9 +122,9 @@ triggerHook:0.7,
 			colorStart: '#75C695', 
 			colorEnd: '#75C695'
 		})
-		.addTo(controllerEggless);
+		.addTo(controllerCelebrate);
 
-	/*	//animation for Catering section 
+		//animation for Catering section 
 		var tl= new TimelineMax(); 
 		const controller= new ScrollMagic.Controller(); 
 		
@@ -133,7 +135,7 @@ triggerHook:0.7,
 	//automatic animation
 		const scene1 = new ScrollMagic.Scene({
   triggerElement: ".catering-section",
-	triggerHook:0.7,
+triggerHook:0.7,
 	duration:"90%"
 })
   .setTween(tl)
@@ -144,23 +146,89 @@ triggerHook:0.7,
 			colorEnd: '#75C695'
 		})
 		.addTo(controller);
-*/
-	
+
+	//set on scroll 
+		function updatePercentageCatering(){ 
+				tl2.progress(); 
+				console.log(tl2.progress()); 
+				}
 			
 //animation for about us section 
-		var tl7= new TimelineMax(); 
-		var tl8= new TimelineMax({onUpdate:updatePercentageCelebrate}); 
+		
+		var tl20= new TimelineMax(); 
 		const controllerAboutUs= new ScrollMagic.Controller(); 
 		
-		tl7.from(".about-us-paragraph", 4, {height:0}); 
+		tl20.from(".about-us-paragraph", 4, {height:0}); 
 
 	//automatic animation
 		const sceneAboutUs = new ScrollMagic.Scene({
   triggerElement: ".about-us-text",
+triggerHook:0.7,
+	duration:"70%"
 })
-  .setTween(tl7)
+  .setTween(tl20)
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
 		.addTo(controllerAboutUs);
 
+	//set on scroll 
+		function updatePercentageCatering(){ 
+				tl20.progress(); 
+				console.log(tl20.progress()); 
+				}
+		
+		//animation for visit india section 
+		
+		var tl21= new TimelineMax(); 
+		const controllerVisitIndia= new ScrollMagic.Controller(); 
+		tl21.from(".about-us-foreground", 1, {opacity:0}); 
+		tl21.from(".parallax-paragraph", 0.5, {opacity:0, y:200}); 
+			
+		
+
+	//automatic animation
+		const sceneParallax = new ScrollMagic.Scene({
+  triggerElement: ".about-us-parallax",
+triggerHook:0.4,
+	duration:"90%"
+})
+  .setTween(tl21)
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
+		.addTo(controllerVisitIndia);
+		
+			//animation for visit india section 
+		
+		var tl21= new TimelineMax(); 
+		const controllerVisitIndia= new ScrollMagic.Controller(); 
+		tl21.from(".about-us-foreground", 1, {opacity:0}); 
+		tl21.from(".parallax-paragraph", 0.5, {opacity:0, y:200}); 
+			
+		
+
+	//automatic animation
+		const sceneParallax = new ScrollMagic.Scene({
+  triggerElement: ".about-us-parallax",
+triggerHook:0.4,
+	duration:"90%"
+})
+  .setTween(tl21)
+		.addIndicators({
+			name: 'fade-scene', 
+			colorTrigger: 'black', 
+			colorStart: '#75C695', 
+			colorEnd: '#75C695'
+		})
+		.addTo(controllerVisitIndia);
+	
 	}
 	
 			
