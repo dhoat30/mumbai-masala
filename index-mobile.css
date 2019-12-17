@@ -135,7 +135,7 @@ z-index: -2;
 	width: 60%; 
 	position: relative;
 	display: grid; 
-	grid-template-columns: repeat( auto-fit, minmax(250px, 300px) ); 
+	grid-template-columns: repeat( auto-fit, minmax(300px, 300px) ); 
 	grid-gap: 50px; 
 	grid-template-rows: 400px 400px 400px 400px; 
 	justify-content: center; 
@@ -191,11 +191,7 @@ z-index: -2;
 .eggless-naan-text{ 
 	margin: 20px 60px 0 20px; 
 }
-.eggless-underline{ 
-	position: relative; 
-	top: 135px;
-	left: 20px; 
-}
+
 /*celebrate any occasion*/ 
 
 .celebrate-section{
@@ -420,9 +416,39 @@ form p{
 	display: block; 
 	text-align: right; 
 }
-
-
-
 }
 
 
+
+@media (max-width: 548px){
+	h2{ 
+	font-family: "Roboto Black", sans-serif; 
+	font-size: 55pt; 
+	letter-spacing: 1px; 
+}
+h3{ 
+	font-family: 'Roboto Light', sans-serif; 
+	font-size: 50pt; 
+	font-weight: 100; 
+}
+
+h4 { 
+	font-family: 'Roboto Black', sans-serif; 
+	letter-spacing: 1px; 
+	font-weight: 900;
+}
+
+h6{ 
+	font-family: "Roboto Regular", sans-serif;
+	font-style: italic; 
+	font-size: 30pt; 
+	font-weight: 100; 
+	color: white; 
+	text-align: left; 
+}
+
+h1{ 
+	font-family: "Roboto Mono", sans-serif; 
+	color:rgba(254,192,0,1.00); 
+}
+}
