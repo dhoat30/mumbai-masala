@@ -49,7 +49,7 @@
 	
 
 	 
-	if ($(window).width()>550){
+	if ($(window).width()>850){
 		
 		//animation for tandoori section 
 	var tl9= new TimelineMax({onUpdate:updatePercentageCatering}); 
@@ -204,6 +204,8 @@ triggerHook:0.4,
 			colorEnd: '#75C695'
 		})
 		.addTo(controllerVisitIndia);
+	
+	}
 
 //Spice Section
 			
@@ -360,5 +362,3 @@ triggerHook:0.4,
 	}, 
 		 offset: 300
 })
-	
-	}

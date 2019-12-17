@@ -1,4 +1,3 @@
-
 @media (max-width: 1400px){
 	
 	body{ 
@@ -14,3 +13,193 @@ overflow-x: hidden;
 	}
 	
 } 
+
+/* 1194 px eggless naan------*/ 
+@media (max-width: 1194px){
+	.eggless-underline{ 
+	grid-column: 20/38;
+	grid-row: 8/8; 
+}
+	.eggless-underline{ 
+		margin-top: -20px; ; 
+	}
+}
+
+/* Tandoori and following sections media query*/ 
+
+@media (min-width: 800px) and (max-width: 1100px){
+	
+.tandoor-background{ 
+	z-index: 1; 
+	width: 100%; 
+	height: 120vh; 
+	background-attachment: fixed; 
+	background-position: bottom; 
+}
+ 
+.tandoori-details{
+	z-index: 2; 
+	margin-top: -200; 
+}
+
+.tandoori-details-text{ 
+ 	 grid-column: 4/24;
+	grid-row: 3/9;
+}
+
+
+/*celebrate any occasion*/ 
+
+
+
+
+
+.celebrate-text{ 
+	 grid-column: 4/24;
+	grid-row: 1/9; 
+}
+
+.celebrate-underline{ 
+	 grid-column: 4/24;
+	grid-row: 7/8; 
+	margin-top: -30px; 
+}
+
+}
+
+/*HERO SECTION MEDIA QUERY---------*/ 
+@media (max-width: 934px){
+	
+/* hero-section-------------------*/ 
+	.hero-section-svg{ 
+	display: none; }
+
+.hero-section-text-area{ 
+	margin: -40px 0 0 40px; 
+	display: flex; 
+	align-items: center; 
+	width: 60%; 
+	height: 100%; 
+}}
+
+@media (max-width: 805px){
+	/*tandoori-section------------*/ 
+.tandoori-details{
+	z-index: 2; 
+	margin-top: 0px; 
+	padding: 20px 0; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+}
+
+.tandoori-details picture:nth-child(1){ 
+	display: none; 
+}
+
+.tandoori-details-text{ 
+ 	margin: 20px 60px 0 20px; 
+}
+/*Eggless naan section-----------*/ 
+.eggless-naan-section{
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	padding: 30px 0; 
+}
+
+.eggless-naan-section picture:nth-child(1){ 
+	display: none; 
+}
+.eggless-naan-section  picture:nth-child(2){ 
+	margin-top: -400px; 
+	width: 100%; 
+}
+.eggless-naan-text{ 
+	margin: 20px 60px 0 20px; 
+}
+.eggless-underline{ 
+	position: absolute; 
+	top: 70%;
+	left: 20px; 
+}
+/*celebrate any occasion*/ 
+
+.celebrate-section{
+	padding: 100px 0; 
+	display: flex;
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	
+}
+
+.celebrate-section picture:nth-child(1){ 
+	display: none; 
+	max-width: 500px;
+	min-width: 350px; 
+}
+
+.celebrate-section  picture:nth-child(2){ 
+	width: 100%; 
+	z-index: 1; 
+}
+
+.celebrate-text{ 
+	margin: 20px 60px 0 20px; 
+}
+.celebrate-text p{ 
+	margin-top: 20px; 
+}
+.celebrate-underline{ 
+	 position: absolute; 
+	top: 76%; 
+	left: 20px; 
+	
+}
+
+
+/*catering section----------------*/ 
+.catering-section{
+	padding: 30px 0; 
+	display: grid; 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(20, 50px); 
+	filter: saturate(120%); 
+}
+
+@-moz-document url-prefix() {
+.catering-section{ 
+	filter: saturate(100%); 
+	}} 
+
+.catering-section picture:nth-child(1){ 
+	grid-column: 4/16; 
+	grid-row: 1/11; 
+	max-width: 500px;
+	min-width: 350px; 
+}
+
+.catering-section  picture:nth-child(2){ 
+	grid-column: 14/41; 
+	grid-row: 10/20; 
+	z-index: 1; 
+}
+.catering-text .underline{ 
+margin-top: 10px; 
+}
+.catering-text{ 
+	 grid-column: 20/38;
+	grid-row: 4/9; 
+}
+.catering-text p{ 
+	margin-top: 20px; 
+}
+
+.catering-underline{ 
+	grid-column: 20/38; 
+ grid-row: 6/7; 
+	margin-top: -10px; 
+	 
+}
+
+}
