@@ -23,6 +23,77 @@ overflow-x: hidden;
 	.eggless-underline{ 
 		margin-top: -20px; ; 
 	}
+	
+	
+/*about-us-section---------------*/ 
+.about-us-parallax{ 
+	background-image: url("photos/about-us-parallax.jpg"); 
+	background-attachment: fixed; 
+	width: 100%; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	background-position: center; 
+	position: relative; 
+	padding: 400px 0; 
+	z-index: -2; 
+}
+.about-us-foreground{ 
+background-color: rgba(0,0,0,0.7); 
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	z-index: -1; 
+}
+.about-us-parallax p{ 
+	color: white; 
+	font-size: 20pt; 
+	font-weight: 100; 
+	font-family: "Roboto Regular", sans-serif; 
+	text-align: center; 
+	width: 70%; 
+	margin: 0 auto; 
+	max-width: 900px; 
+}
+#about-us{ 
+	padding: 100px 0 0 0; 
+	display: grid; 
+	grid-template-columns: repeat(20,1fr); 
+	grid-template-rows: repeat(20,50px); 
+	filter: saturate(120%); 
+}
+
+@-moz-document url-prefix() {
+#about-us{ 
+	filter: saturate(100%); 
+	}} 
+
+#about-us picture { 
+	grid-column: 2/8; 
+	grid-row: 4/21; 
+	width: 40%; 
+	height: 40%; 
+	
+}
+
+.about-us-text {
+	grid-column: 13/20; 
+	grid-row: 10/21;
+}
+
+.about-us-text p{ 
+	position: relative; 
+	left: 20px; 
+}
+ .about-us-paragraph::before{ 
+	content: ""; 
+	border-left: solid 10px rgba(253,106,89,1.00); 
+	height: 100%; 
+	left: -20px; 
+	position: absolute; 
+}
+
 }
 
 /* Tandoori and following sections media query*/ 
@@ -96,7 +167,10 @@ overflow-x: hidden;
 .tandoori-details picture:nth-child(1){ 
 	display: none; 
 }
-
+	.tandoori-details picture:nth-child(2){ 
+		height: 400px; 
+		object-fit: cover; 
+	}
 .tandoori-details-text{ 
  	margin: 20px 60px 0 20px; 
 }
@@ -112,15 +186,16 @@ overflow-x: hidden;
 	display: none; 
 }
 .eggless-naan-section  picture:nth-child(2){ 
-	margin-top: -400px; 
+	margin-top: -200px; 
 	width: 100%; 
+	height: 400px; 
 }
 .eggless-naan-text{ 
 	margin: 20px 60px 0 20px; 
 }
 .eggless-underline{ 
 	position: absolute; 
-	top: 70%;
+	top: 430px;
 	left: 20px; 
 }
 /*celebrate any occasion*/ 
@@ -141,7 +216,9 @@ overflow-x: hidden;
 
 .celebrate-section  picture:nth-child(2){ 
 	width: 100%; 
+	height: 400px; 
 	z-index: 1; 
+	object-fit: cover; 
 }
 
 .celebrate-text{ 
@@ -152,54 +229,42 @@ overflow-x: hidden;
 }
 .celebrate-underline{ 
 	 position: absolute; 
-	top: 76%; 
+	top: 780px; 
 	left: 20px; 
 	
 }
-
-
 /*catering section----------------*/ 
 .catering-section{
-	padding: 30px 0; 
-	display: grid; 
-	grid-template-columns: repeat(40, 1fr); 
-	grid-template-rows: repeat(20, 50px); 
-	filter: saturate(120%); 
-}
-
-@-moz-document url-prefix() {
-.catering-section{ 
-	filter: saturate(100%); 
-	}} 
-
+	padding: 50px 0; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+	} 
 .catering-section picture:nth-child(1){ 
-	grid-column: 4/16; 
-	grid-row: 1/11; 
-	max-width: 500px;
-	min-width: 350px; 
+	display: none; 
 }
-
 .catering-section  picture:nth-child(2){ 
-	grid-column: 14/41; 
-	grid-row: 10/20; 
-	z-index: 1; 
-}
-.catering-text .underline{ 
-margin-top: 10px; 
+	width: 100%; 
+	height: 400px; 
+	object-fit: cover; 
 }
 .catering-text{ 
-	 grid-column: 20/38;
-	grid-row: 4/9; 
+	margin: 20px 60px 0 20px; 
 }
 .catering-text p{ 
 	margin-top: 20px; 
 }
-
 .catering-underline{ 
-	grid-column: 20/38; 
- grid-row: 6/7; 
-	margin-top: -10px; 
-	 
+	position: absolute; 
+	top: 560px;
+	left: 20px;  
+}
+	
+/*about-us-section---------------*/ 
+.about-us-parallax p{ 
+	text-align: left; 
+	width: 80%; 	
+}
 }
 
-}
+
