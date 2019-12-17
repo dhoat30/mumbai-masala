@@ -30,6 +30,11 @@ overflow-x: hidden;
 		width: 300px; 
 		margin: 20px 40px; 
 		}
+	
+.tandoor-background{ 
+	display: none;
+	
+}
 /*egless---------------*/ 
 	.eggless-underline{ 
 	grid-column: 20/38;
@@ -38,6 +43,10 @@ overflow-x: hidden;
 	.eggless-underline{ 
 		margin-top: -20px; ; 
 	}
+.about-us-parallax{ 
+	display: none; 
+}
+	
 #about-us{ 
 	padding: 100px 0 0 0; 
 	display: flex; 
@@ -47,6 +56,7 @@ overflow-x: hidden;
 	align-items: center; 
 	flex-wrap: wrap; 
 }
+	
 #about-us picture { 
 	width: 50%; 
 }
@@ -135,7 +145,7 @@ z-index: -2;
 	width: 60%; 
 	position: relative;
 	display: grid; 
-	grid-template-columns: repeat( auto-fit, minmax(250px, 300px) ); 
+	grid-template-columns: repeat( auto-fit, minmax(300px, 300px) ); 
 	grid-gap: 50px; 
 	grid-template-rows: 400px 400px 400px 400px; 
 	justify-content: center; 
@@ -420,9 +430,9 @@ form p{
 	display: block; 
 	text-align: right; 
 }
-
-
-
 }
 
-
+/* iphone device responsive-------*/ 
+@media (max-width: 548px){
+	
+}
