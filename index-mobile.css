@@ -1,8 +1,9 @@
-@media (max-width: 1400px){
-	
 	body{ 
 overflow-x: hidden;
 }
+@media (max-width: 1400px){
+	
+
 
 	.mobile-navbar{ 
 		display: block; 
@@ -16,6 +17,20 @@ overflow-x: hidden;
 
 /* 1194 px eggless naan------*/ 
 @media (max-width: 1194px){
+	/*-------USP-------------------------------*/ 
+
+
+.usp-grid{ 
+	padding: 200px 0; 
+	display: flex; 
+	flex-direction: row; 
+	flex-wrap: wrap; 
+}
+	.usp-element{ 
+		width: 300px; 
+		margin: 20px 40px; 
+		}
+/*egless---------------*/ 
 	.eggless-underline{ 
 	grid-column: 20/38;
 	grid-row: 8/8; 
@@ -23,77 +38,27 @@ overflow-x: hidden;
 	.eggless-underline{ 
 		margin-top: -20px; ; 
 	}
-	
-	
-/*about-us-section---------------*/ 
-.about-us-parallax{ 
-	background-image: url("photos/about-us-parallax.jpg"); 
-	background-attachment: fixed; 
-	width: 100%; 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	background-position: center; 
-	position: relative; 
-	padding: 400px 0; 
-	z-index: -2; 
-}
-.about-us-foreground{ 
-background-color: rgba(0,0,0,0.7); 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-	z-index: -1; 
-}
-.about-us-parallax p{ 
-	color: white; 
-	font-size: 20pt; 
-	font-weight: 100; 
-	font-family: "Roboto Regular", sans-serif; 
-	text-align: center; 
-	width: 70%; 
-	margin: 0 auto; 
-	max-width: 900px; 
-}
 #about-us{ 
 	padding: 100px 0 0 0; 
-	display: grid; 
-	grid-template-columns: repeat(20,1fr); 
-	grid-template-rows: repeat(20,50px); 
-	filter: saturate(120%); 
+	display: flex; 
+	flex-direction: row; 
+	filter: saturate(120%);
+	justify-content: center; 
+	align-items: center; 
+	flex-wrap: wrap; 
 }
-
-@-moz-document url-prefix() {
-#about-us{ 
-	filter: saturate(100%); 
-	}} 
-
 #about-us picture { 
-	grid-column: 2/8; 
-	grid-row: 4/21; 
-	width: 40%; 
-	height: 40%; 
-	
+	width: 50%; 
 }
-
 .about-us-text {
-	grid-column: 13/20; 
-	grid-row: 10/21;
+	width: 50%; 
 }
 
 .about-us-text p{ 
 	position: relative; 
-	left: 20px; 
+	left: 20px;
+	padding: 0 60px 0 0; 
 }
- .about-us-paragraph::before{ 
-	content: ""; 
-	border-left: solid 10px rgba(253,106,89,1.00); 
-	height: 100%; 
-	left: -20px; 
-	position: absolute; 
-}
-
 }
 
 /* Tandoori and following sections media query*/ 
@@ -117,14 +82,7 @@ background-color: rgba(0,0,0,0.7);
  	 grid-column: 4/24;
 	grid-row: 3/9;
 }
-
-
 /*celebrate any occasion*/ 
-
-
-
-
-
 .celebrate-text{ 
 	 grid-column: 4/24;
 	grid-row: 1/9; 
@@ -135,7 +93,6 @@ background-color: rgba(0,0,0,0.7);
 	grid-row: 7/8; 
 	margin-top: -30px; 
 }
-
 }
 
 /*HERO SECTION MEDIA QUERY---------*/ 
@@ -154,7 +111,48 @@ background-color: rgba(0,0,0,0.7);
 }}
 
 @media (max-width: 805px){
-	/*tandoori-section------------*/ 
+	
+	
+/*-Specials------------------------------*/ 
+#specials{ 
+background-color: black; 
+background: rgb(46,46,61);
+background: linear-gradient(90deg, rgba(46,46,61,1) 0%, rgba(22,22,22,1) 100%);
+	position: relative; 
+z-index: -2; 
+ filter: saturate(120%); 
+	padding-top: 100px; 
+}
+
+.background-decoration{ 
+	display: none; 
+}
+.background-decoration2{ 
+	display: none; 
+}
+.special-grid{ 
+	margin: 0 auto; 
+	width: 60%; 
+	position: relative;
+	display: grid; 
+	grid-template-columns: repeat( auto-fit, minmax(250px, 300px) ); 
+	grid-gap: 50px; 
+	grid-template-rows: 400px 400px 400px 400px; 
+	justify-content: center; 
+	padding: 100px 0; 
+}
+.special-grid h2{ 
+	position: absolute; 
+	background-color:rgba(0,0,0,0.00);  
+	color:#FEC000; 
+	padding: 20px; 
+	top: 0; 
+	left: 50%; 
+	margin-left: -190px; 
+	margin-top: -60px; 
+	z-index: 2; 
+}
+/*tandoori-section------------*/ 
 .tandoori-details{
 	z-index: 2; 
 	margin-top: 0px; 
@@ -194,8 +192,8 @@ background-color: rgba(0,0,0,0.7);
 	margin: 20px 60px 0 20px; 
 }
 .eggless-underline{ 
-	position: absolute; 
-	top: 430px;
+	position: relative; 
+	top: 135px;
 	left: 20px; 
 }
 /*celebrate any occasion*/ 
@@ -228,8 +226,8 @@ background-color: rgba(0,0,0,0.7);
 	margin-top: 20px; 
 }
 .celebrate-underline{ 
-	 position: absolute; 
-	top: 780px; 
+	 position: relative; 
+	top: 220px; 
 	left: 20px; 
 	
 }
@@ -255,8 +253,8 @@ background-color: rgba(0,0,0,0.7);
 	margin-top: 20px; 
 }
 .catering-underline{ 
-	position: absolute; 
-	top: 560px;
+	position: relative; 
+	top: 120px;
 	left: 20px;  
 }
 	
@@ -265,6 +263,166 @@ background-color: rgba(0,0,0,0.7);
 	text-align: left; 
 	width: 80%; 	
 }
+}
+
+/*underline responsiveness and family combo----*/ 
+
+@media (max-width: 630px){
+	
+	/* family combo------------*/ 
+.family-combo-grid{ 
+	display: grid; 
+	grid-template-columns: repeat(40, 1fr); 
+	grid-template-rows: repeat(16,50px); 
+}
+.family-background{
+	background-color: rgba(255,229,144,1.00); 
+	grid-column: 1 / 41; 
+	grid-row: 1 / 16; 
+}
+.family-combo-text{ 
+	grid-column: 3 / 41; 
+	grid-row: 7 / 17; 
+	z-index: 2; 	
+}
+.family-combo-img{ 
+	grid-column: 1 / 41;
+	grid-row: 1 / 7; 
+	z-index: 1; 
+}
+.eggless-underline{ 
+		position: relative; 
+		top: 220px; 
+}
+.celebrate-underline{ 
+		position: relative; 
+		top: 310px; 
+	}
+	
+#about-us{ 
+	padding: 100px 0 100px 0; 
+	display: flex; 
+	flex-direction: column; 
+	filter: saturate(120%);
+	justify-content: center; 
+	align-items: center; 
+	flex-wrap: wrap; 
+}
+#about-us picture { 
+	width: 100%; 
+}
+.about-us-text {
+	width: 80%; 
+}
+	
+/*reserve a table---------------*/ 
+#reservation{ 
+	display:block; 
+	
+}
+#reservation picture{
+	grid-column: 1/21; 
+	grid-row: 1/21;
+	display: none; 
+}
+.reservation-form{ 
+	z-index: 10; 
+	padding: 50px 50px 50px 50px; 
+	width: 100%; 
+	background-color:rgba(255,229,144,1.00);  
+}
+
+form{ 
+	margin-top: 10px; 
+	width: 250px; 
+	z-index: 10;
+}
+input{ 
+	width: 250px; 
+	height: 35px; 
+	border-radius: 7px; 
+	border: none; 
+	display: block; 
+}
+
+input[type="date"], input[type="time"]{ 
+	width: 117px; 
+}
+
+label{ 
+	display: inline-block; 
+	margin-top: 15px; 
+	margin-bottom: 3px;
+	font-family: "Roboto Regular", sans-serif; 
+	font-size: 14pt;
+	font-weight: 600; 
+}
+
+button{ 
+	background-color:rgba(253,106,89,1.00);
+	padding: 10px 70px; 
+	border-radius: 20px; 
+	border: none; 
+	display: block; 
+	margin: 10px auto 0 auto; 
+	font-size: 14pt; 
+	font-family: "Roboto Regular", sans-serif; }
+button:hover{ 
+	background-color: rgba(251,56,33,1.00); 
+}
+.form-grid{ 
+	width: 200px; 
+	display: grid; 
+	grid-template-columns: repeat(20,1fr); 
+}
+
+.form-grid div:nth-child(1){ 
+	grid-column: 1/11; 
+	width:100px; 
+}
+.form-grid div:nth-child(2){ 
+	grid-column: 14/21; 
+}
+
+form p{ 
+	color: rgba(252,51,28,1.00); 
+	margin-top: 5px; 
+}
+
+/*review section---------------*/ 
+.reviews{ 
+	margin: 0 auto; 
+	width: 90%; 
+	background-color: rgba(255,229,144,1.00); 
+	padding: 10px; 
+	text-align: center; 
+	box-shadow: 15px 15px 5px 0px #B5B5B5; 
+}
+	.reviews h2{ 
+	padding-top: 50px;
+	}
+.review-text{ 
+	margin: -40px 0 0 0; 
+	display: grid; 
+	grid-template-columns: 1fr 9fr 1fr; 
+	grid-template-rows:  200px; 
+	justify-content:center; 
+	align-items: center; 	
+}
+#review-paragraph{ 
+	font-style: italic;
+	font-size: 12pt; 
+}
+
+#review-paragraph span{ 
+	position: absolute;
+	right: 15%; 
+	display: block; 
+	text-align: right; 
+}
+
+
+
 }
 
 
