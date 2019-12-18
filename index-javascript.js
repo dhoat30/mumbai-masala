@@ -69,12 +69,6 @@
 	duration:"80%"
 })
   .setTween(tl10)
-			.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controllerTandooriSection);
 		
 
@@ -93,12 +87,6 @@
 	duration:"80%"
 })
   .setTween(tl3)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controllerEggless);
 
 //animation for celebrate section 
@@ -116,12 +104,6 @@ triggerHook:0.7,
 	duration:"90%"
 })
   .setTween(tl5)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controllerCelebrate);
 
 		//animation for Catering section 
@@ -139,12 +121,6 @@ triggerHook:0.7,
 	duration:"90%"
 })
   .setTween(tl)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controller);
 
 	//set on scroll 
@@ -167,12 +143,6 @@ triggerHook:0.7,
 	duration:"70%"
 })
   .setTween(tl20)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controllerAboutUs);
 
 	//set on scroll 
@@ -197,12 +167,6 @@ triggerHook:0.4,
 	duration:"90%"
 })
   .setTween(tl21)
-		.addIndicators({
-			name: 'fade-scene', 
-			colorTrigger: 'black', 
-			colorStart: '#75C695', 
-			colorEnd: '#75C695'
-		})
 		.addTo(controllerVisitIndia);
 	
 	}
@@ -210,7 +174,7 @@ triggerHook:0.4,
 //Spice Section
 			
 	 var waypointMild = new Waypoint({
-  element: document.getElementsByClassName('spiceMild'),
+  element: document.getElementsByClassName('spiceness'),
 		 
   handler: function(direction) {
 	  if(direction=='down'){
@@ -260,7 +224,7 @@ triggerHook:0.4,
 })
 	 
 	  var waypointMedium = new Waypoint({
-  element: document.getElementsByClassName('spiceMedium'),
+  element: document.getElementsByClassName('spiceness'),
 		 
   handler: function(direction) {
 	  if(direction=='down'){
@@ -312,7 +276,7 @@ triggerHook:0.4,
 })
 	  
 	  	  var waypointHot = new Waypoint({
-  element: document.getElementsByClassName('spiceHot'),
+  element: document.getElementsByClassName('spiceness'),
 		 
   handler: function(direction) {
 	  if(direction=='down'){

@@ -1,8 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
- body { overflow-x:hidden; 
-	background-color:rgba(255,231,198,1.00); 
+ body { 
+	 background-color: rgba(254,247,237,1.00);
+	 overflow-x: hidden;  
 }
+
 *{ 
 margin: 0; 
 padding: 0; 
@@ -464,7 +466,7 @@ z-index: -2;
 
 .special-box p{
 	position: absolute; 
-	top: 110px; 
+	top: 120px; 
 	left: 100px; 
 
 }
@@ -881,7 +883,7 @@ background-color: rgba(0,0,0,0.7);
 /*reserve a table---------------*/ 
 #reservation{ 
 	
-	display: none; 
+	display: grid; 
 	grid-template-columns: repeat(20/1fr); 
 	grid-template-rows: repeat (20/50px); 
 	filter: saturate(120%); 
@@ -899,7 +901,6 @@ background-color: rgba(0,0,0,0.7);
 .reservation-form{ 
 	z-index: 10; 
 	padding: 50px 0px 50px 50px; 
-
 	grid-column: 14/21; 
 	grid-row: 10/15; 
 	background-color:rgba(255,229,144,1.00);  
