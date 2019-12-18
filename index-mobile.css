@@ -28,6 +28,11 @@
 		width: 300px; 
 		margin: 20px 40px; 
 		}
+	
+.tandoor-background{ 
+	display: none;
+	
+}
 /*egless---------------*/ 
 	.eggless-underline{ 
 	grid-column: 20/38;
@@ -36,6 +41,10 @@
 	.eggless-underline{ 
 		margin-top: -20px; ; 
 	}
+.about-us-parallax{ 
+	display: none; 
+}
+	
 #about-us{ 
 	padding: 100px 0 0 0; 
 	display: flex; 
@@ -45,6 +54,7 @@
 	align-items: center; 
 	flex-wrap: wrap; 
 }
+	
 #about-us picture { 
 	width: 50%; 
 }
@@ -352,6 +362,7 @@ z-index: -2;
 
 
 
+
 @media (max-width: 548px){
 
 	h2{ 
@@ -380,4 +391,9 @@ z-index: -2;
 	.about-us-parallax{ 
 		display: none; 
 	}
+
+
+/* iphone device responsive-------*/ 
+@media (max-width: 548px){
+
 }
