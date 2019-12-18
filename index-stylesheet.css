@@ -880,7 +880,8 @@ background-color: rgba(0,0,0,0.7);
 
 /*reserve a table---------------*/ 
 #reservation{ 
-	display: grid; 
+	
+	display: none; 
 	grid-template-columns: repeat(20/1fr); 
 	grid-template-rows: repeat (20/50px); 
 	filter: saturate(120%); 
