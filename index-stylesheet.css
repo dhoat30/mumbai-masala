@@ -1,11 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
-body{ 
-overflow-x: hidden;
-
-background-color:rgba(255,231,198,1.00); 
+ body { overflow-x:hidden; 
+	background-color:rgba(255,231,198,1.00); 
 }
-
 *{ 
 margin: 0; 
 padding: 0; 
@@ -154,7 +151,7 @@ color:rgba(253,106,89,1.00);
 .menu-list ul li a{ 
 	font-size: 16pt; 
 	width: 100%; 
-	padding: 10px 0 10px 20px; 
+	margin:10px 0 10px 20px; 
 	text-decoration: none; 
 	font-family:"Roboto", sans-serif; 
 	color: white; 
@@ -739,7 +736,7 @@ margin-top: 10px;
 	grid-row: 4/9; 
 }
 .eggless-naan-text p{ 
-	margin-top: 20px; 
+	margin-top: 10px; 
 }
 
 /*celebrate any occasion*/ 
@@ -777,11 +774,6 @@ margin-top: 10px;
 .celebrate-text p{ 
 	margin-top: 10px; 
 }
-.celebrate-underline{ 
-	 grid-column: 4/24;
-	grid-row: 8/9; 
-	margin-top: -20px; 
-}
 
 
 /*catering section----------------*/ 
@@ -810,23 +802,14 @@ margin-top: 10px;
 	grid-row: 10/20; 
 	z-index: 1; 
 }
-.catering-text .underline{ 
-margin-top: 10px; 
-}
 .catering-text{ 
 	 grid-column: 20/38;
 	grid-row: 4/9; 
 }
 .catering-text p{ 
-	margin-top: 20px; 
+	margin-top: 10px; 
 }
 
-.catering-underline{ 
-	grid-column: 20/38; 
- grid-row: 6/7; 
-	margin-top: -10px; 
-	 
-}
 
 /*about-us-section---------------*/ 
 .about-us-parallax{ 
@@ -914,7 +897,8 @@ background-color: rgba(0,0,0,0.7);
 }
 .reservation-form{ 
 	z-index: 10; 
-	padding: 50px 50px 50px 50px; 
+	padding: 50px 0px 50px 50px; 
+
 	grid-column: 14/21; 
 	grid-row: 10/15; 
 	background-color:rgba(255,229,144,1.00);  

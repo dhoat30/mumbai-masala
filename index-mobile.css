@@ -1,6 +1,4 @@
-	body{ 
-overflow-x: hidden;
-}
+
 @media (max-width: 1400px){
 	
 
@@ -108,7 +106,19 @@ overflow-x: hidden;
 	align-items: center; 
 	width: 60%; 
 	height: 100%; 
-}}
+}
+.special-grid{ 
+	margin: 0 auto; 
+	width: 100%; 
+	position: relative;
+	display: grid; 
+	grid-template-columns: 300px 300px; 
+	grid-gap: 50px; 
+	grid-template-rows: 400px 400px; 
+	justify-content: center; 
+	padding: 100px 0; 
+}
+}
 
 @media (max-width: 805px){
 	
@@ -218,15 +228,7 @@ z-index: -2;
 .celebrate-text{ 
 	margin: 20px 60px 0 20px; 
 }
-.celebrate-text p{ 
-	margin-top: 20px; 
-}
-.celebrate-underline{ 
-	 position: relative; 
-	top: 220px; 
-	left: 20px; 
-	
-}
+
 /*catering section----------------*/ 
 .catering-section{
 	padding: 50px 0; 
@@ -245,15 +247,7 @@ z-index: -2;
 .catering-text{ 
 	margin: 20px 60px 0 20px; 
 }
-.catering-text p{ 
-	margin-top: 20px; 
-}
-.catering-underline{ 
-	position: relative; 
-	top: 120px;
-	left: 20px;  
-}
-	
+
 /*about-us-section---------------*/ 
 .about-us-parallax p{ 
 	text-align: left; 
@@ -286,14 +280,6 @@ z-index: -2;
 	grid-row: 1 / 7; 
 	z-index: 1; 
 }
-.eggless-underline{ 
-		position: relative; 
-		top: 220px; 
-}
-.celebrate-underline{ 
-		position: relative; 
-		top: 310px; 
-	}
 	
 #about-us{ 
 	padding: 100px 0 100px 0; 
@@ -314,7 +300,6 @@ z-index: -2;
 /*reserve a table---------------*/ 
 #reservation{ 
 	display:block; 
-	
 }
 #reservation picture{
 	grid-column: 1/21; 
@@ -323,69 +308,16 @@ z-index: -2;
 }
 .reservation-form{ 
 	z-index: 10; 
-	padding: 50px 50px 50px 50px; 
+	padding: 50px 0 50px 30px; 
 	width: 100%; 
+	margin: 0 auto;
 	background-color:rgba(255,229,144,1.00);  
 }
 
-form{ 
-	margin-top: 10px; 
-	width: 250px; 
-	z-index: 10;
-}
-input{ 
-	width: 250px; 
-	height: 35px; 
-	border-radius: 7px; 
-	border: none; 
-	display: block; 
-}
-
-input[type="date"], input[type="time"]{ 
-	width: 117px; 
-}
-
-label{ 
-	display: inline-block; 
-	margin-top: 15px; 
-	margin-bottom: 3px;
-	font-family: "Roboto Regular", sans-serif; 
-	font-size: 14pt;
-	font-weight: 600; 
-}
-
-button{ 
-	background-color:rgba(253,106,89,1.00);
-	padding: 10px 70px; 
-	border-radius: 20px; 
-	border: none; 
-	display: block; 
-	margin: 10px auto 0 auto; 
-	font-size: 14pt; 
-	font-family: "Roboto Regular", sans-serif; }
-button:hover{ 
-	background-color: rgba(251,56,33,1.00); 
-}
-.form-grid{ 
-	width: 200px; 
-	display: grid; 
-	grid-template-columns: repeat(20,1fr); 
-}
-
-.form-grid div:nth-child(1){ 
-	grid-column: 1/11; 
-	width:100px; 
-}
-.form-grid div:nth-child(2){ 
-	grid-column: 14/21; 
-}
-
-form p{ 
-	color: rgba(252,51,28,1.00); 
-	margin-top: 5px; 
-}
-
 /*review section---------------*/ 
+	#review-section{ 
+		padding: 50px 0; 
+	}
 .reviews{ 
 	margin: 0 auto; 
 	width: 90%; 
@@ -421,34 +353,31 @@ form p{
 
 
 @media (max-width: 548px){
+
 	h2{ 
 	font-family: "Roboto Black", sans-serif; 
-	font-size: 55pt; 
+	font-size: 40pt; 
 	letter-spacing: 1px; 
 }
-h3{ 
-	font-family: 'Roboto Light', sans-serif; 
-	font-size: 50pt; 
-	font-weight: 100; 
+	.hero-section-text-area{ 
+		margin: 0 10px 0 10px; 
+		width: 100%; 
+	}
+.hero-section-text h2{ 
+	color: rgba(191,191,191,1.00); 
+	font-weight: 900; 
+	font-size: 40pt; 
+	margin: 20px 0 20px 0; 
 }
 
-h4 { 
-	font-family: 'Roboto Black', sans-serif; 
-	letter-spacing: 1px; 
-	font-weight: 900;
-}
-
-h6{ 
-	font-family: "Roboto Regular", sans-serif;
-	font-style: italic; 
-	font-size: 30pt; 
-	font-weight: 100; 
-	color: white; 
-	text-align: left; 
-}
-
-h1{ 
-	font-family: "Roboto Mono", sans-serif; 
-	color:rgba(254,192,0,1.00); 
-}
+	.hero-section-text h1{ 
+		font-size: 15pt;
+	}
+	
+	.tandoor-background{ 
+		display: none;
+	}
+	.about-us-parallax{ 
+		display: none; 
+	}
 }
