@@ -15,6 +15,57 @@
 			$(".hamburger-menu").show("slow","swing"); 
 		})
 
+//form validation		
+		function form()
+{
+	var name=document.getElementById("name"); 
+    var phone=document.getElementById("phone-number"); 
+	var date=document.getElementById("date"); 
+	var time=document.getElementById("time"); 
+	var guests=document.getElementById('guests'); 
+	
+	if(name.value.length === 0)
+		{
+			alert("Please enter your name");
+			name.focus(); 
+			name.style.background = "#FFEFC7";
+			return false; 
+		}
+	name.style.background = "white"; 
+	
+	if(phone.value.length === 0)
+		{
+			alert("Please enter your phone number"); 
+			phone.focus(); 
+			phone.style.background = "#FFEFC7";
+			return false; 
+		}
+	phone.style.background = "white"; 
+	
+	if(date.value.length === 0)
+		{
+			alert("Please enter the date"); 
+			date.focus(); 
+			date.style.background = "#FFEFC7";
+			return false; 
+		}
+	date.style.background = "white"; 
+	
+	if(time.value.length === 0)
+		{
+			alert("Please enter the time"); 
+			time.focus(); 
+			time.style.background = "#FFEFC7";
+			return false; 
+		}
+	time.style.background = "white"; 
+	
+	if (result===false){ 
+		alert("invalid date"); 
+		return false;
+	}
+}
+
 //Review section
 
     /* Add your logic here */

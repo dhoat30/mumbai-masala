@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
 maximum-scale=1.0, user-scalable=no" /> 
-
+<link href="photos/Mumbai-logo.svg" rel="icon" type="image/x-icon" />
 <title>Mumbai Masala Indian Restaurant | Papamoa | Takeaway & Dine In</title>
 <link type="text/css" rel="stylesheet" href="index-stylesheet.css"> 
 <link type="text/css" rel="stylesheet" href="index-mobile.css"> 
@@ -205,7 +205,14 @@ maximum-scale=1.0, user-scalable=no" />
 				<h2> Specials</h2>
 				<img class="background-decoration" src="photos/background-design.svg" alt="background design"> 
 			<img class="background-decoration2" src="photos/background-design.svg" alt="background design"> 
+			
 			<div class="special-box"> 
+				<div class="special-banner1">
+					<svg xmlns="http://www.w3.org/2000/svg" width="229.679" height="40.146" viewBox="0 0 229.679 40.146">
+					  <path id="Path_1041" data-name="Path 1041" d="M2506.8-276.889h229.679l-26.724,20.073,26.724,20.073H2506.8v-40.145Z" transform="translate(2736.479 -236.744) rotate(180)" fill="#fd6a59"/>
+					</svg>
+					<h4>All Day Special</h4>
+				</div>
 				<h3>$10</h3>
 				<div class="flex-svg"> 
 					<img src="photos/curry-art.svg" alt="curry bowl"> 
@@ -219,6 +226,13 @@ maximum-scale=1.0, user-scalable=no" />
 			</div>
 			
 			<div class="special-box"> 
+				<div class="special-banner2">
+						<svg xmlns="http://www.w3.org/2000/svg" width="229.679" height="40.145" viewBox="0 0 229.679 40.145">
+						  <path id="Path_1042" data-name="Path 1042" d="M2506.8-276.889h229.679l-26.724,20.073,26.724,20.073H2506.8v-40.145Z" transform="translate(-2506.799 276.889)" fill="#fd6a59"/>
+						</svg>
+
+					<h4>Lunch Special</h4>
+				</div>
 				<h3>$11</h3>
 				<div class="flex-svg"> 
 					<img src="photos/curry-art.svg" alt="curry bowl"> 
@@ -226,7 +240,7 @@ maximum-scale=1.0, user-scalable=no" />
 					<img src="photos/naan.svg" alt="Naan">
 					<img src="photos/drink-can.svg" alt="Soft Drink">
 				</div>
-				<h4>Takeaway Only</h4>
+				<h4> Takeaway Only</h4>
 				<ul>
 					<li> Butter Chicken or Any Vege Curry</li>
 					<li>Rice</li>
@@ -242,7 +256,7 @@ maximum-scale=1.0, user-scalable=no" />
 					<img src="photos/rice-bowl.svg" alt="rice-bowl"> 
 					<img src="photos/naan.svg" alt="Naan">
 				</div>
-				<h4>Dine In</h4>
+				<h4>Lunch Special Dine In</h4>
 				<ul>
 					<li> Butter Chicken or Any Vege Curry</li>
 					<li>Rice</li>
@@ -483,26 +497,30 @@ maximum-scale=1.0, user-scalable=no" />
 			<div class="underline"> </div>
 			<p>Book your table</p>
 			
-			<form method="post"> 
+			<form method="post" onSubmit="return form()" > 
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name"> 
 
 				<label for="number">Phone Number</label>
-				<input type="number" name="phone-number"> 
-
+				<input type="number" name="phone-number" id="phone-number"> 
+				
+				<label for="guests">Number Of Guests</label>
+				<input type="number" name="guests" id="guests">
+				
 				<div class="form-grid">
 					<div> 
 						<label for="date">Date</label>
-						<input type="date" name="date">
+						<input type="date" name="date" id="date">
 					</div>
 					<div> 
 						<label for="time"> Time</label>
-						<input type="time" name="time"> 
+						<input type="time" name="time" id="time"> 
 					</div> 
 				 </div>
 				<p> *Minimum 5 hours of notice</p>
 				<div class="form-button"> 
 					<button type="submit" name="submit"> Send </button>
+					<h4>Thanks for booking a table...</h4>
 				</div>	
 			</form>
 		</div>
