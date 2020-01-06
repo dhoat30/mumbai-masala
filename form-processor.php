@@ -31,6 +31,7 @@ maximum-scale=1.0, user-scalable=no" />
 </head>
 
 <body>
+<div class="overflow"> 
 	<nav class="desktop-navbar"> 
 		<div class="desktop-navbar-logo"> 
 			<img src="photos/Mumbai-logo.svg" alt="Mumbai Masala Logo" width="150px" height="60px"> 
@@ -313,70 +314,15 @@ maximum-scale=1.0, user-scalable=no" />
 	<div id="menu"> 
 		<h2>Menus</h2>
 		<div class="menu-stamp">
+			<a href="takeaway-menu.pdf" target="_blank"> <img src="photos/takeaway-menu.svg" alt= "Takeaway Menu"></a>	
 			
-			<div class="flip-box">
- 				 <div class="flip-box-inner">
-    				 <div class="flip-box-front">
-    				  <img src="photos/takeaway-menu.svg" alt="Takeaway Menu Mumbai Masala">
-   					 </div>
-   					 <div class="flip-box-back-takeaway">
-						  <a href="Website" target="_blank">View Menu</a>
-   					 </div>
-					</div>
-			</div>
+			<a href="lunch-menu-compressed.pdf" target="_blank"> <img src="photos/lunch-menu.svg" alt= "Lunch Menu"></a>	
 			
-			 <div class="flip-box">
- 				<div class="flip-box-inner">
-    				<div class="flip-box-front">
-    				  <img src="photos/lunch-menu.svg" alt="Lunch Menu Mumbai Masala">
-   					 </div>
-   					 <div class="flip-box-back-lunch">
-						 <a class="menu-link" href="lunch-menu-compressed.pdf" target="_blank">View Menu</a>
-						 </div>
-  				</div>
-				</div>	
-				
-			
-			<div class="flip-box">
- 				 <div class="flip-box-inner">
-    				<div class="flip-box-front">
-    				  <img src="photos/dine-in-menu.svg" alt="Takeaway Menu Mumbai Masala">
-   					 </div>
-   					 <div class="flip-box-back-dine">
-						  <a href="dine-in-menu-compressed.pdf" target="_blank">View Menu</a>
-   					 </div>
-  				</div>
-			</div>	
+			<a href="dine-in-menu-compressed.pdf"> <img src="photos/dine-in-menu.svg" alt="Dine In Menu"></a>
 			
 		</div>
 	</div>
 </div> 	
-
-
-	
-	 
-	<!--
-	<div class="second-tandoori-section"> 
-		<div class="second-tandoori"> 
-			<div>
-				<picture> 
-					 <source media="(min-width: 900px)" srcset="photos/malai-tikka.jpg" >
-					  <source media="(min-width: 400px)" srcset="photos/malai-tikka-600.jpg" >
-					  <img src="photos/malai-tikka-400.jpg" alt="malai tikka" width="100%" height="100%" >
-				</picture>
-				<h3>Malai Tikka</h3>
-			</div>
-			<div>
-				<picture> 
-					 <source media="(min-width: 900px)" srcset="photos/chicken-tikka.jpg">
-					  <source media="(min-width: 400px)" srcset="photos/chicken-tikka-600.jpg" >
-					  <img src="photos/chicken-tikka-400.jpg" alt="chicken tikka" width="100%" height="100%" >
-				</picture>
-				<h3>Chicken Tikka</h3>
-			</div>
-		</div>
-	</div>
---> 
 	
 	
 		<div class="tandoor-background"> 
@@ -588,7 +534,6 @@ maximum-scale=1.0, user-scalable=no" />
 			<h6> Contact</h6>
 			<div> 
 				<a href="tel: 075743640"> 
-				
 					<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg class="contact-svg" version="1.1" id="Capa_2" width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 20.1 20.1" style="enable-background:new 0 0 20.1 20.1;" xml:space="preserve">
@@ -650,7 +595,7 @@ maximum-scale=1.0, user-scalable=no" />
 		  <path id="Icon_ionic-ios-arrow-dropup-circle" data-name="Icon ionic-ios-arrow-dropup-circle" d="M23.966,44.557A20.591,20.591,0,1,0,3.375,23.966,20.588,20.588,0,0,0,23.966,44.557Zm0-24.2L15.937,28.46a1.911,1.911,0,0,1-2.7-2.7l9.474-9.444a1.909,1.909,0,0,1,2.633-.059l9.335,9.305a1.908,1.908,0,1,1-2.693,2.7Z" transform="translate(-3.375 -3.375)" fill="#FD6A59"/>
 		</svg></a>
 	</div>
-	
+</div>	
 	<script src="index-javascript.js"> </script>
 		<?php
 
