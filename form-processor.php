@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
 maximum-scale=1.0, user-scalable=no" /> 
-<link href="photos/Mumbai-logo.svg" rel="icon" type="image/x-icon" />
-<title>Mumbai Masala Indian Restaurant | Papamoa | Takeaway & Dine In</title>
+<meta name="robots" content="noindex">
 <link type="text/css" rel="stylesheet" href="index-stylesheet.css"> 
 <link type="text/css" rel="stylesheet" href="index-mobile.css"> 
 <meta name="Description" content="Indian Bistro & Tandoori Restaurant. $10 Lunch Special. Takeaway & Dine In. Gluten Free & Dairy Free options available. Food Delivery Available in Papamoa & Mount Area.">
@@ -28,10 +27,10 @@ maximum-scale=1.0, user-scalable=no" />
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
 
+
 </head>
 
 <body>
-<div class="overflow"> 
 	<nav class="desktop-navbar"> 
 		<div class="desktop-navbar-logo"> 
 			<img src="photos/Mumbai-logo.svg" alt="Mumbai Masala Logo" width="150px" height="60px"> 
@@ -314,25 +313,25 @@ maximum-scale=1.0, user-scalable=no" />
 	<div id="menu"> 
 		<h2>Menus</h2>
 		<div class="menu-stamp">
-			<a href="takeaway-menu.pdf">
+			
 			<div class="flip-box">
  				 <div class="flip-box-inner">
     				 <div class="flip-box-front">
     				  <img src="photos/takeaway-menu.svg" alt="Takeaway Menu Mumbai Masala">
    					 </div>
    					 <div class="flip-box-back-takeaway">
-						  <a href="takeaway-menu.pdf" target="_blank" >View Menu</a>
+						  <a href="Website" target="_blank">View Menu</a>
    					 </div>
 					</div>
 			</div>
-			</a>
+			
 			 <div class="flip-box">
  				<div class="flip-box-inner">
     				<div class="flip-box-front">
     				  <img src="photos/lunch-menu.svg" alt="Lunch Menu Mumbai Masala">
    					 </div>
    					 <div class="flip-box-back-lunch">
-						 <a class="menu-link" href="lunch-menu-compressed.pdf"  target="_blank" >View Menu</a>
+						 <a class="menu-link" href="lunch-menu-compressed.pdf" target="_blank">View Menu</a>
 						 </div>
   				</div>
 				</div>	
@@ -344,7 +343,7 @@ maximum-scale=1.0, user-scalable=no" />
     				  <img src="photos/dine-in-menu.svg" alt="Takeaway Menu Mumbai Masala">
    					 </div>
    					 <div class="flip-box-back-dine">
-						  <a href="dine-in-menu-compressed.pdf" target="_blank"  >View Menu</a>
+						  <a href="dine-in-menu-compressed.pdf" target="_blank">View Menu</a>
    					 </div>
   				</div>
 			</div>	
@@ -497,7 +496,7 @@ maximum-scale=1.0, user-scalable=no" />
 			<div class="underline"> </div>
 			<p>Book your table</p>
 			
-			<form action="form-processor.php?id=44#reservation-form" method="post" onSubmit="return form()" > 
+			<form method="post" onSubmit="return form()" > 
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name"> 
 
@@ -519,8 +518,8 @@ maximum-scale=1.0, user-scalable=no" />
 				 </div>
 				<p> *Minimum 5 hours of notice</p>
 				<div class="form-button"> 
-					<button type="submit" name="submit"> Send </button>
-					<h4>Thanks for booking a table...</h4>
+					<button type="submit" name="submit" style="display: none;"> Send </button>
+					<h4 style="display: block;">Thanks for booking a table...</h4>
 				</div>	
 			</form>
 		</div>
@@ -589,7 +588,7 @@ maximum-scale=1.0, user-scalable=no" />
 			<h6> Contact</h6>
 			<div> 
 				<a href="tel: 075743640"> 
-					<?xml version="1.0" encoding="utf-8"?>
+				
 					<!-- Generator: Adobe Illustrator 24.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg class="contact-svg" version="1.1" id="Capa_2" width="25" height="25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 						 viewBox="0 0 20.1 20.1" style="enable-background:new 0 0 20.1 20.1;" xml:space="preserve">
@@ -651,8 +650,24 @@ maximum-scale=1.0, user-scalable=no" />
 		  <path id="Icon_ionic-ios-arrow-dropup-circle" data-name="Icon ionic-ios-arrow-dropup-circle" d="M23.966,44.557A20.591,20.591,0,1,0,3.375,23.966,20.588,20.588,0,0,0,23.966,44.557Zm0-24.2L15.937,28.46a1.911,1.911,0,0,1-2.7-2.7l9.474-9.444a1.909,1.909,0,0,1,2.633-.059l9.335,9.305a1.908,1.908,0,1,1-2.693,2.7Z" transform="translate(-3.375 -3.375)" fill="#FD6A59"/>
 		</svg></a>
 	</div>
-</div>
-	<script src="index-javascript.js"> </script>
 	
+	<script src="index-javascript.js"> </script>
+		<?php
+
+if(isset($_POST['submit'])){ 
+	$name=$_POST['name']; 
+	$phone=$_POST['phone-number']; 
+	$date=$_POST['date'];
+	$time=$_POST['time']; 
+	$guests=$_POST['guests']; 
+	$message="<h1> Thanks for the Reservation</h1>`"; 
+	$msg="Resrvation Form: \n Name: $name \n Phone: $phone \n Booking Date: $date \n Booking Time: $time \n Number of guests $guests"; 
+
+	$to='info@mumbaimasala.co.nz'; 
+	$sub="Reservation Form"; 
+	mail($to,$sub,$msg); 
+	
+}
+	?>	
 </body>
 </html>
