@@ -378,3 +378,25 @@ margin-top: 0px;
 		display: none; 
 	}
 }
+
+
+@media (max-width: 442px){
+	
+.hero-buttons a{
+	background-color: rgba(253,106,89,1.00); 
+	font-family: 'Roboto Regular', sans-serif; 
+	font-weight: 900; 
+	padding: 15px 0; 
+	display:block; 
+	text-align: center; 
+	margin:5px auto;
+	border-radius: 20px; 
+	color: white; 
+	text-decoration: none; 
+	position: relative; 
+	left: -10px; 
+	z-index: 4; 
+}
+
+
+}
