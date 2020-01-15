@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
+html{ 
+	scroll-behavior: smooth; 
+}
  body { 
 	 background-color: rgba(254,247,237,1.00);
 	 overflow-x: hidden;  

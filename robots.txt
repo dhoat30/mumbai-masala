@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://www.mumbaimasalapapamoa.co.nz/sitemap/sitemap.xml

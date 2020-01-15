@@ -108,9 +108,9 @@
 		const controllerTandooriSection= new ScrollMagic.Controller(); 
 		
 		
-		tl10.from(".tandoori-details-text", 1, {opacity:0.2, y:100});  
-		tl10.from(".tandoori-first-photo", 1, {width:0, y:100}); 
-		tl10.from(".tandoori-underline",0.5, { width:0});
+		tl10.from(".tandoori-details-text", 1, {opacity:0.2, y:200});  
+		tl10.from(".tandoori-first-photo", 1, {width:0, y:100},"-=1"); 
+		tl10.from(".tandoori-underline",0.5, { width:0},"-=0.5");
 		
 
 	//automatic animation
@@ -127,8 +127,8 @@
 		var tl3= new TimelineMax(); 
 		const controllerEggless= new ScrollMagic.Controller(); 
 		tl3.from(".eggless-naan-text", 1,  {opacity:0.2, y:100}); 
-		tl3.from(".eggless-photo-first", 1,  {width:0, y:100});
-		tl3.from(".eggless-underline",0.5, { width:0}); 
+		tl3.from(".eggless-photo-first", 1,  {width:0, y:100},"-=1");
+		tl3.from(".eggless-underline",0.5, { width:0},"-=0.5"); 
 	
 
 	//automatic animation
@@ -145,8 +145,8 @@
 		const controllerCelebrate= new ScrollMagic.Controller(); 
 		
 		tl5.from(".celebrate-text", 1, {opacity:0.2, y:100}); 
-		tl5.from(".celebrate-photo-first", 1, {width:0, y:100});
-		tl5.from(".celebrate-underline", 0.5, { width:0}); 
+		tl5.from(".celebrate-photo-first", 1, {width:0, y:100},"-=1");
+		tl5.from(".celebrate-underline", 0.5, { width:0},"-=0.5"); 
 
 	//automatic animation
 		const sceneCelebrate = new ScrollMagic.Scene({
@@ -162,8 +162,8 @@ triggerHook:0.7,
 		const controller= new ScrollMagic.Controller(); 
 		
 		tl.from(".catering-text", 1, {opacity:0.2, y:100}); 
-		tl.from(".catering-photo-first", 1, {width:0, y:100});
-		tl.from(".catering-underline",  0.5, { width:0}); 
+		tl.from(".catering-photo-first", 1, {width:0, y:100},"-=1");
+		tl.from(".catering-underline",  0.5, { width:0},"-=0.5"); 
 
 	//automatic animation
 		const scene1 = new ScrollMagic.Scene({
@@ -377,3 +377,6 @@ triggerHook:0.4,
 	}, 
 		 offset: 300
 })
+		  
+//scroll speed
+ 

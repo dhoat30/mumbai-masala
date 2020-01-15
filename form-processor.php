@@ -7,7 +7,6 @@ maximum-scale=1.0, user-scalable=no" />
 <meta name="robots" content="noindex">
 <link type="text/css" rel="stylesheet" href="index-stylesheet.css"> 
 <link type="text/css" rel="stylesheet" href="index-mobile.css"> 
-<meta name="Description" content="Indian Bistro & Tandoori Restaurant. $10 Lunch Special. Takeaway & Dine In. Gluten Free & Dairy Free options available. Food Delivery Available in Papamoa & Mount Area.">
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/429eb03bb8.js" crossorigin="anonymous"></script>
 	
@@ -38,7 +37,7 @@ maximum-scale=1.0, user-scalable=no" />
 		</div>
 		<div class="navbar"> 
 			<ul> 
-				<li><a href="#hero-section"> Home</a></li>
+				<li><a href="index.html"> Home</a></li>
 				<li><a href="#specials">Specials</a> </li>
 				<li><a href="#menu">Menu</a> </li>
 				<li><a href="#about-us">About Us</a> </li>
@@ -86,7 +85,7 @@ maximum-scale=1.0, user-scalable=no" />
 				</svg>
 			</div>
 			<ul> 
-				<li><a href="#hero-section"> Home</a></li>
+				<li><a href="index.html"> Home</a></li>
 				<li><a href="#specials">Specials</a> </li>
 				<li><a href="#menu">Menu</a> </li>
 				<li><a href="#about-us">About Us</a> </li>
